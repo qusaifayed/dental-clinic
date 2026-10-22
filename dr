@@ -1,0 +1,2222 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="top-dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عيادة د. محمود دويكات لطب الأسنان</title>
+<meta name="description" content="عيادة د. محمود دويكات لطب وتجميل الأسنان: فحص وتنظيف، تبييض، تقويم شفاف وزراعة. احجز موعدك عبر واتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pearl:#F5F7F5; --surface:#FFFFFF; --ink:#0E2230; --muted:#5A6A73; --line:rgba(14,34,48,.11);
+  --night:#0A1A26; --night-2:#112838; --on-night:#EAF3F3; --night-muted:#9DB4BC;
+  --aqua:#7FE0D6; --aqua-deep:#0E8F8A; --coral:#E8707A; --on-coral:#FFFFFF; --blush:#FBE4E6;
+  --display:'Alexandria','Segoe UI',Tahoma,sans-serif;
+  --body:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px);-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip;max-width:100%}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+body{margin:0;background:var(--pearl);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.8;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--pearl);transition:background .3s}
+html.top-dark body::before{background:var(--night)}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2.5px solid var(--coral);outline-offset:3px;border-radius:8px}
+.wrap{width:100%;max-width:1180px;margin-inline:auto;padding-inline:20px}
+h1,h2,h3{font-family:var(--display);margin:0;letter-spacing:0}
+h2{font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.3;font-weight:700}
+.lead{color:var(--muted);max-width:36em;margin:14px 0 0}
+section{padding-block:clamp(72px,10vw,128px)}
+
+/* buttons */
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:15px 28px;font-family:var(--display);font-weight:600;font-size:16px;text-decoration:none;border:2px solid currentColor;background:none;transition:transform .15s,color .35s,border-color .35s}
+.btn::before{content:"";position:absolute;inset:0;border-radius:inherit;background:var(--ink);transform:translateY(102%);transition:transform .45s cubic-bezier(.7,0,.2,1);z-index:-1}
+.btn.primary{background:var(--coral);border-color:var(--coral);color:var(--on-coral)}
+.btn.primary::before{background:#d65864}
+.btn:active{transform:scale(.97)}
+@media (hover:hover){.btn:hover::before{transform:none}.btn:not(.primary):hover{color:var(--pearl);border-color:var(--ink)}}
+.on-night .btn:not(.primary){color:var(--on-night)}
+.on-night .btn:not(.primary)::before{background:var(--on-night)}
+@media (hover:hover){.on-night .btn:not(.primary):hover{color:var(--night);border-color:var(--on-night)}}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--pearl) 96%,transparent);border-bottom:1px solid var(--line);transition:background .35s,border-color .35s,color .35s}
+.site-header.on-dark{background:transparent;border-color:transparent;color:var(--on-night);backdrop-filter:none;-webkit-backdrop-filter:none}
+.bar{display:flex;align-items:center;gap:28px;height:74px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:18px;line-height:1.25}
+.brand svg{width:36px;height:36px;flex:none}
+.brand small{display:block;font-family:var(--body);font-weight:500;font-size:12px;opacity:.7}
+.nav{display:flex;gap:24px;margin-inline-start:auto;font-size:15px}
+.nav a{text-decoration:none;opacity:.72;transition:opacity .2s}
+.nav a:hover{opacity:1}
+.bar .btn{padding:10px 20px;font-size:15px}
+.burger{display:none;margin-inline-start:auto;width:46px;height:46px;border-radius:50%;border:2px solid currentColor;background:none;padding:0}
+.burger span{display:block;width:18px;height:2px;background:currentColor;margin:4px auto;border-radius:2px}
+@media (max-width:1080px){.nav,.bar .btn{display:none}.burger{display:grid;align-content:center}}
+
+/* menu */
+.menu{position:fixed;inset:0;z-index:60;background:var(--night);color:var(--on-night);display:flex;flex-direction:column;padding:calc(20px + env(safe-area-inset-top,0px)) 24px calc(24px + env(safe-area-inset-bottom,0px));visibility:hidden}
+.menu.open{visibility:visible}
+.menu-top{display:flex;justify-content:space-between;align-items:center}
+.menu-close{border:2px solid currentColor;background:none;border-radius:999px;padding:8px 18px;font-size:15px}
+.menu nav{display:grid;gap:4px;margin-block:auto}
+.menu nav a{font-family:var(--display);font-weight:700;font-size:clamp(2rem,9vw,3rem);line-height:1.5;text-decoration:none;display:block}
+.menu .btn{color:var(--on-coral)}
+
+/* hero */
+.hero{position:relative;background:var(--night);color:var(--on-night);padding-block:clamp(8px,3vw,40px) 0;margin-top:-75px;padding-top:calc(75px + clamp(8px,3vw,40px));overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:70vmax;height:70vmax;background:radial-gradient(closest-side,rgba(127,224,214,.18),transparent 70%);pointer-events:none}
+.hero-grid{position:relative;display:grid;gap:8px;align-items:center}
+@media (min-width:960px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:min(760px,calc(100vh - 74px))}}
+.hero h1{font-size:clamp(2.4rem,5.8vw,4.5rem);line-height:1.28;font-weight:800}
+.hero .lead{color:var(--night-muted);font-size:clamp(1.02rem,1.6vw,1.15rem)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.trust{list-style:none;margin:30px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;color:var(--night-muted)}
+.trust li{display:flex;align-items:center;gap:8px}
+.trust svg{width:18px;height:18px;color:var(--aqua);flex:none}
+.hero-3d{position:relative;height:clamp(320px,52vw,640px);order:-1}
+@media (min-width:960px){.hero-3d{order:0;height:100%;min-height:560px}}
+.hero-3d canvas{position:absolute;inset:0;width:100%!important;height:100%!important}
+.hero-3d .glow{position:absolute;inset:12% 12%;border-radius:50%;background:radial-gradient(closest-side,rgba(127,224,214,.35),rgba(127,224,214,.08) 60%,transparent);filter:blur(10px)}
+.hero-3d .fallback{position:absolute;inset:14%;display:none}
+.hero-3d.no3d .fallback{display:block}
+.spark{position:absolute;width:22px;height:22px;color:#fff;pointer-events:none}
+.smile-edge{display:block;width:100%;height:clamp(50px,8vw,110px);margin-top:clamp(10px,3vw,30px)}
+.smile-edge path{fill:var(--pearl)}
+
+/* compare */
+.compare-grid{display:grid;gap:clamp(28px,4vw,64px);align-items:center}
+@media (min-width:960px){.compare-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}}
+.smile{position:relative;background:linear-gradient(160deg,var(--blush),color-mix(in srgb,var(--aqua) 22%,var(--pearl)));border-radius:36px;padding:clamp(18px,3vw,40px) clamp(8px,2vw,24px) 70px;touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:ew-resize}
+.smile svg{display:block;width:100%;height:auto;overflow:visible}
+.smile-tag{position:absolute;bottom:20px;font-family:var(--display);font-weight:600;font-size:14px;padding:7px 15px;border-radius:999px;background:var(--surface);color:var(--ink)}
+.smile-tag.before{right:20px}
+.smile-tag.after{left:20px;background:var(--night);color:var(--on-night)}
+.smile input{position:absolute;width:1px;height:1px;opacity:0}
+.smile:focus-within{outline:2.5px solid var(--coral);outline-offset:4px}
+.compare-copy ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
+.compare-copy li{display:flex;gap:12px;align-items:flex-start}
+.compare-copy li svg{width:22px;height:22px;color:var(--aqua-deep);flex:none;margin-top:5px}
+
+/* tooth story */
+.story{display:grid;gap:0 clamp(24px,5vw,72px);margin-top:clamp(20px,3vw,32px)}
+@media (min-width:960px){.story{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}}
+.story-visual{position:sticky;top:calc(env(safe-area-inset-top,0px) + 80px);z-index:2;height:min(46vh,420px);padding-block:6px;background:var(--pearl)}
+@media (min-width:960px){.story-visual{top:104px;height:calc(100vh - 140px);max-height:640px}}
+.xray{position:relative;height:100%;border-radius:32px;background:radial-gradient(120% 90% at 50% 30%,var(--night-2),var(--night));overflow:hidden;display:grid;place-items:center}
+.xray::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(127,224,214,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(127,224,214,.07) 1px,transparent 1px);background-size:28px 28px}
+.xray::after{content:"";position:absolute;inset-inline:0;top:0;height:30%;background:linear-gradient(to bottom,transparent,rgba(127,224,214,.16),transparent);animation:scan 3.6s cubic-bezier(.5,0,.5,1) infinite}
+@keyframes scan{from{transform:translateY(-100%)}to{transform:translateY(340%)}}
+.xray svg{position:relative;width:100%;height:100%;max-width:560px;overflow:visible}
+.xray-tag{position:absolute;top:16px;right:18px;font-size:12px;color:var(--aqua);font-family:var(--display);font-weight:600;display:flex;align-items:center;gap:8px;z-index:1}
+.xray-tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--coral);animation:blink 1.2s steps(2) infinite}
+@keyframes blink{50%{opacity:.2}}
+.story-group{font-family:var(--display);font-weight:700;font-size:15px;color:var(--aqua-deep);margin:48px 0 0}
+.story-step{min-height:54vh;display:flex;align-items:center}
+@media (min-width:960px){.story-step{min-height:70vh}}
+.story-card{background:var(--surface);border:1.5px solid var(--line);border-radius:28px;padding:24px 26px;max-width:30em;opacity:.42;transition:opacity .4s,transform .6s cubic-bezier(.3,1.5,.5,1),border-color .3s,box-shadow .4s}
+.story-step.on .story-card{opacity:1;border-color:var(--aqua-deep);transform:scale(1.03);box-shadow:0 18px 50px -24px rgba(14,143,138,.45)}
+.story-card h3{font-size:1.45rem;font-weight:700;margin-bottom:6px;line-height:1.4}
+.story-card p{margin:0;color:var(--muted)}
+.lbl-text{font-family:var(--display);font-weight:700;font-size:20px;fill:#EAF3F3}
+.lbl-line{stroke:var(--aqua);stroke-width:2;fill:none}
+.lbl-dot{fill:var(--coral)}
+.L-hl{transition:filter .4s}
+
+/* process */
+.process{background:var(--night);color:var(--on-night)}
+.process .lead{color:var(--night-muted)}
+.steps{position:relative;margin-top:clamp(36px,5vw,56px);display:grid;gap:clamp(28px,4vw,44px);padding-inline-start:84px}
+.track{position:absolute;top:8px;bottom:8px;inset-inline-start:27px;width:3px;border-radius:3px;background:rgba(234,243,243,.14)}
+.track-fill{position:absolute;inset:0;background:linear-gradient(var(--aqua),var(--coral));border-radius:3px;transform-origin:top;transform:scaleY(0)}
+.step{position:relative}
+.step-num{position:absolute;inset-inline-start:-84px;top:-6px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:22px;background:var(--night);border:3px solid rgba(234,243,243,.22);transition:background .35s,border-color .35s,color .35s}
+.step.on .step-num{background:var(--aqua);border-color:var(--aqua);color:var(--night)}
+.step h3{font-size:clamp(1.25rem,2.4vw,1.6rem);font-weight:700;line-height:1.4}
+.step p{margin:6px 0 0;max-width:34em;color:var(--night-muted)}
+
+/* brushing */
+.brush-sec{background:linear-gradient(180deg,var(--pearl),color-mix(in srgb,var(--aqua) 14%,var(--pearl)))}
+.brush-grid{display:grid;gap:clamp(28px,4vw,56px);align-items:center;margin-top:clamp(28px,4vw,44px)}
+@media (min-width:960px){.brush-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
+.brush-panel{background:var(--surface);border-radius:32px;padding:clamp(12px,3vw,28px);box-shadow:0 30px 60px -40px rgba(14,34,48,.35)}
+.brush-panel svg{display:block;width:100%;height:auto;overflow:visible}
+.timer{display:flex;align-items:center;gap:18px;margin-top:20px;flex-wrap:wrap}
+.ring{width:96px;height:96px;position:relative;flex:none}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:8}
+.ring .bg{stroke:var(--line)}
+.ring .fg{stroke:var(--aqua-deep);stroke-linecap:round;transition:stroke-dashoffset .25s linear}
+.ring span{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:23px;direction:ltr}
+.timer-info{flex:1;min-width:150px}
+.timer-info strong{display:block;font-family:var(--display);font-size:1.1rem;line-height:1.5}
+.timer-info span{color:var(--muted);font-size:15px}
+.tips{list-style:none;margin:0;padding:0;counter-reset:t;display:grid;gap:20px}
+.tips li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;align-items:start}
+.tips li::before{counter-increment:t;content:counter(t);width:44px;height:44px;border-radius:50%;background:var(--night);color:var(--aqua);display:grid;place-items:center;font-family:var(--display);font-weight:800}
+.tips b{font-family:var(--display);display:block}
+.tips span{color:var(--muted)}
+
+/* sugar */
+.sugar-card{background:var(--surface);border-radius:32px;padding:clamp(16px,3vw,32px);margin-top:clamp(28px,4vw,44px);box-shadow:0 30px 60px -40px rgba(14,34,48,.3)}
+.sugar-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;margin-bottom:10px}
+.seg{position:relative;display:inline-flex;gap:4px;padding:4px;border-radius:999px;background:var(--pearl)}
+.seg button{position:relative;z-index:1;border:0;background:none;border-radius:999px;padding:10px 18px;font-family:var(--display);font-weight:600;font-size:15px;transition:color .3s}
+.seg button[aria-pressed="true"]{color:var(--pearl)}
+.seg-pill{position:absolute;top:4px;bottom:4px;left:0;border-radius:999px;background:var(--ink)}
+.danger{font-family:var(--display);font-weight:600;font-size:15px;line-height:1.4}
+.danger b{display:inline-block;font-size:2.4rem;color:var(--coral);font-weight:800;margin-inline-end:6px;vertical-align:middle}
+.chart{display:block;width:100%;height:auto}
+.chart .axis{stroke:var(--line);stroke-width:1}
+.chart text{font-family:var(--body);font-size:13px;fill:var(--muted)}
+.chart .zone{fill:var(--blush)}
+.chart .crit{stroke:var(--coral);stroke-width:1.5;stroke-dasharray:6 6}
+.chart .curve{fill:none;stroke:var(--aqua-deep);stroke-width:3.5;stroke-linejoin:round;stroke-linecap:round}
+.chart .curve.hot{stroke:var(--coral);stroke-width:4.5}
+.chart .area{fill:url(#areaGrad);opacity:.5}
+.chart .ev{fill:var(--coral)}
+.note-small{font-size:13px;color:var(--muted);margin:10px 0 0}
+
+/* habits */
+.habits{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:clamp(22px,3vw,36px);margin-top:clamp(28px,4vw,48px)}
+.habit{position:relative;padding-top:18px}
+.habit::before{content:"";position:absolute;top:0;inset-inline:0;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--coral),var(--aqua-deep));transform-origin:right;transform:scaleX(var(--s,1))}
+.habit .n{font-family:var(--display);font-weight:800;font-size:clamp(3.6rem,9vw,5.8rem);line-height:1.1;color:var(--ink);display:inline-block}
+.habit .u{font-family:var(--display);font-weight:700;font-size:1.2rem;margin-inline-start:8px;color:var(--aqua-deep)}
+.habit p{margin:8px 0 0;color:var(--muted)}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));gap:0 56px;margin-top:clamp(32px,5vw,52px)}
+.svc-item{display:grid;grid-template-columns:60px minmax(0,1fr);gap:18px;align-items:start;padding:24px 0;border-top:1px solid var(--line)}
+.svc-icon{width:60px;height:60px;border-radius:20px;background:var(--night);color:var(--aqua);display:grid;place-items:center}
+.svc-icon svg{width:32px;height:32px}
+.svc-icon path,.svc-icon circle{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.svc-item h3{font-size:1.2rem;font-weight:700;line-height:1.5}
+.svc-item p{margin:4px 0 0;color:var(--muted);font-size:16px}
+
+/* doctor */
+.doctor{display:grid;gap:clamp(28px,5vw,72px);align-items:center;margin-top:clamp(28px,4vw,48px)}
+@media (min-width:860px){.doctor{grid-template-columns:auto minmax(0,1fr)}}
+.avatar{position:relative;width:clamp(200px,28vw,300px);aspect-ratio:1;margin-inline:auto}
+.avatar svg{position:absolute;inset:0;width:100%;height:100%}
+.avatar .face{position:absolute;inset:14%;border-radius:50%;background:linear-gradient(150deg,var(--night-2),var(--night));color:var(--aqua);display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,5vw,3.6rem)}
+.avatar .orbit{animation:spin 18s linear infinite;transform-origin:50% 50%}
+@keyframes spin{to{transform:rotate(360deg)}}
+.doctor h3{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800;line-height:1.3}
+.doctor .role{color:var(--aqua-deep);font-family:var(--display);font-weight:600;margin:4px 0 0}
+.doctor .bio{color:var(--muted);max-width:34em;margin:16px 0 24px}
+
+/* reviews */
+.reviews{background:var(--surface)}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,4vw,48px);margin-top:clamp(32px,5vw,52px)}
+.quote{margin:0;position:relative}
+.quote svg{width:44px;height:44px;color:var(--coral)}
+.quote blockquote{margin:10px 0 14px;font-family:var(--display);font-weight:600;font-size:clamp(1.15rem,2vw,1.35rem);line-height:1.75}
+.quote figcaption{color:var(--muted);font-size:15px}
+.stars{color:#F2B630;letter-spacing:2px;font-size:15px}
+
+/* faq */
+.faq-list{margin-top:clamp(28px,4vw,44px);max-width:840px}
+.faq-item{border-top:1px solid var(--line)}
+.faq-item:last-child{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:right;background:none;border:0;padding:22px 0;font-family:var(--display);font-weight:600;font-size:clamp(1.05rem,2vw,1.2rem);line-height:1.5}
+.faq-plus{flex:none;width:38px;height:38px;border-radius:50%;background:var(--night);color:var(--aqua);display:grid;place-items:center;transition:transform .45s cubic-bezier(.3,1.6,.5,1),background .25s,color .25s}
+.faq-item.open .faq-plus{transform:rotate(135deg);background:var(--coral);color:#fff}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.4,0,.2,1)}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+.faq-a > div{overflow:hidden}
+.faq-a p{margin:0 0 22px;color:var(--muted);max-width:40em}
+
+/* booking */
+.book{background:var(--night);color:var(--on-night)}
+.book .lead{color:var(--night-muted)}
+.book-grid{display:grid;gap:clamp(28px,4vw,56px)}
+@media (min-width:960px){.book-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start}}
+.card{background:var(--surface);color:var(--ink);border-radius:32px;padding:clamp(22px,3.4vw,40px)}
+.form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.field{display:grid;gap:8px;min-width:0}
+.field.full{grid-column:1/-1}
+.field label,.field .lbl{font-family:var(--display);font-weight:600;font-size:14px}
+input,select,textarea{font:inherit;font-size:16px;width:100%;max-width:100%;min-width:0;padding:13px 16px;border-radius:16px;border:1.5px solid var(--line);background:var(--pearl);color:var(--ink);transition:border-color .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--aqua-deep)}
+input[type="date"]{-webkit-appearance:none;appearance:none;display:block;min-height:52px;text-align:start}
+input::-webkit-date-and-time-value{text-align:start}
+textarea{resize:vertical;min-height:90px}
+.pills{display:flex;gap:10px;flex-wrap:wrap}
+.pill{border:1.5px solid var(--line);background:var(--pearl);border-radius:999px;padding:10px 18px;font-size:15px;transition:background .2s,color .2s,border-color .2s}
+.pill[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--pearl)}
+.form-error{grid-column:1/-1;margin:0;color:var(--coral);font-weight:600}
+.form .btn{grid-column:1/-1}
+.sent{text-align:center;padding:12px 0}
+.sent svg{width:80px;height:80px}
+.sent circle,.sent path{fill:none;stroke:var(--aqua-deep);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.sent h3{font-size:1.5rem;margin:14px 0 8px}
+.sent pre{text-align:right;white-space:pre-wrap;font:inherit;font-size:15px;background:var(--pearl);border-radius:18px;padding:16px 18px;margin:16px 0}
+.sent .note{font-size:14px;color:var(--muted);margin:0 0 18px}
+.info{display:grid;gap:24px}
+.info h3{font-size:1.15rem;font-weight:700;margin-bottom:6px}
+.hours{list-style:none;margin:0;padding:0}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(234,243,243,.12)}
+.hours li span:last-child{color:var(--night-muted)}
+.info p{margin:0 0 14px;color:var(--night-muted)}
+.info-actions{display:flex;flex-wrap:wrap;gap:10px}
+
+.foot{background:var(--night);color:var(--night-muted);border-top:1px solid rgba(234,243,243,.1);padding-block:28px 110px;font-size:14px}
+.foot .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.wa{position:fixed;z-index:35;left:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.28);transform:scale(0);transition:transform .5s cubic-bezier(.3,1.6,.5,1)}
+.wa.show{transform:scale(1)}
+.wa svg{width:30px;height:30px}
+
+
+/* ===== palettes (default = lilac) ===== */
+:root,html[data-palette="blue"]{
+  --pearl:#F1F8FF; --ink:#0A2540; --muted:#536B85; --line:rgba(10,37,64,.12);
+  --night:#0B3A66; --night-2:#125A9A; --on-night:#EEF7FF; --night-muted:#B3D4F2;
+  --aqua:#8ED4FF; --aqua-deep:#1488DB; --coral:#FFC93C; --on-coral:#0A2540; --blush:#DCEFFF;
+}
+html[data-palette="mint"]{
+  --pearl:#F1FAF6; --ink:#0B3A31; --muted:#4F6E66; --line:rgba(11,58,49,.12);
+  --night:#0B3A31; --night-2:#125041; --on-night:#EFFBF6; --night-muted:#A6CFC2;
+  --aqua:#8AF2CC; --aqua-deep:#0FA374; --coral:#FF6B6B; --on-coral:#FFFFFF; --blush:#DDF5EA;
+}
+html[data-palette="sky"]{
+  --pearl:#F3F7FF; --ink:#0B2545; --muted:#55657F; --line:rgba(11,37,69,.12);
+  --night:#0B2545; --night-2:#14386A; --on-night:#EEF4FF; --night-muted:#A9BCDB;
+  --aqua:#9CC2FF; --aqua-deep:#2D6BFF; --coral:#FFC93C; --on-coral:#0B2545; --blush:#E1ECFF;
+}
+html[data-palette="peach"]{
+  --pearl:#FFF6F1; --ink:#3B1E24; --muted:#7A5A5E; --line:rgba(59,30,36,.12);
+  --night:#3B1E24; --night-2:#572931; --on-night:#FFF3EE; --night-muted:#E3BDB5;
+  --aqua:#FFB9A8; --aqua-deep:#E0485F; --coral:#2EC4B6; --on-coral:#FFFFFF; --blush:#FFE6DD;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){ --pearl:#13111C; --surface:#1C1929; --ink:#EEEAF7; --muted:#ABA5C2; --line:rgba(238,234,247,.12); --blush:#262139; color-scheme:dark; }
+}
+:root[data-theme="dark"]{ --pearl:#13111C; --surface:#1C1929; --ink:#EEEAF7; --muted:#ABA5C2; --line:rgba(238,234,247,.12); --blush:#262139; color-scheme:dark; }
+
+.brand svg{color:var(--aqua-deep)}
+.on-dark .brand svg,.menu .brand svg{color:var(--aqua)}
+.hero::before{background:radial-gradient(closest-side,color-mix(in srgb,var(--aqua) 30%,transparent),transparent 70%)}
+.hero-3d .glow{background:radial-gradient(closest-side,color-mix(in srgb,var(--aqua) 45%,transparent),color-mix(in srgb,var(--aqua) 10%,transparent) 60%,transparent)}
+.xray::before{background-image:linear-gradient(color-mix(in srgb,var(--aqua) 10%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--aqua) 10%,transparent) 1px,transparent 1px)}
+.xray::after{background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--aqua) 22%,transparent),transparent)}
+.hl path,.hl rect{stroke:var(--aqua)!important}
+.h-knob{fill:var(--night)} .h-arrow{stroke:var(--aqua)}
+.brush-handle{fill:var(--coral)}
+#areaGrad stop{stop-color:var(--aqua-deep)}
+#rg stop:first-child{stop-color:var(--coral)} #rg stop:last-child{stop-color:var(--aqua-deep)}
+.orbit circle:first-child{stroke:var(--aqua)} .orbit circle:last-child{fill:var(--coral)}
+.story-step.on .story-card{box-shadow:0 18px 50px -24px color-mix(in srgb,var(--aqua-deep) 55%,transparent)}
+
+/* animated page background (follows palette) */
+.bg-mesh,.bg-mesh::before,.bg-mesh::after{position:absolute;inset:-12vmax;pointer-events:none;will-change:transform}
+.bg-mesh{background:
+  radial-gradient(30vmax 30vmax at 18% 26%,color-mix(in srgb,var(--aqua) 75%,transparent),transparent 70%),
+  radial-gradient(26vmax 26vmax at 82% 62%,color-mix(in srgb,var(--aqua-deep) 30%,transparent),transparent 70%);
+  animation:meshA 14s ease-in-out infinite alternate}
+.bg-mesh::before{content:"";inset:0;background:
+  radial-gradient(24vmax 24vmax at 70% 20%,color-mix(in srgb,var(--blush) 100%,transparent),transparent 70%),
+  radial-gradient(22vmax 22vmax at 30% 80%,color-mix(in srgb,var(--coral) 35%,transparent),transparent 70%);
+  animation:meshB 11s ease-in-out infinite alternate}
+.bg-mesh::after{content:"";inset:0;background:
+  radial-gradient(20vmax 20vmax at 50% 50%,color-mix(in srgb,var(--aqua) 55%,transparent),transparent 70%),
+  radial-gradient(16vmax 16vmax at 88% 18%,color-mix(in srgb,var(--aqua-deep) 25%,transparent),transparent 70%);
+  animation:meshC 17s ease-in-out infinite alternate}
+@keyframes meshA{0%{transform:translate3d(0,0,0) rotate(0deg) scale(1)}50%{transform:translate3d(12vmax,-8vmax,0) rotate(25deg) scale(1.15)}100%{transform:translate3d(-10vmax,10vmax,0) rotate(-20deg) scale(.9)}}
+@keyframes meshB{0%{transform:translate3d(0,0,0) rotate(0deg)}50%{transform:translate3d(-14vmax,9vmax,0) rotate(-30deg)}100%{transform:translate3d(10vmax,-12vmax,0) rotate(35deg)}}
+@keyframes meshC{0%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(9vmax,12vmax,0) scale(1.25)}100%{transform:translate3d(-12vmax,-6vmax,0) scale(.85)}}
+.bg-parts{position:absolute;inset:0}
+.bg-p{position:absolute;will-change:transform}
+.bg-p > span{display:block;will-change:transform}
+.bg-p svg{display:block;width:100%;height:100%}
+.aurora{position:absolute;inset:0;z-index:0;background:radial-gradient(80% 60% at 70% 20%,color-mix(in srgb,var(--aqua) 40%,transparent),transparent),radial-gradient(60% 50% at 20% 70%,color-mix(in srgb,var(--aqua-deep) 45%,transparent),transparent),var(--hero-base)}
+.aurora canvas{position:absolute;inset:0;width:100%!important;height:100%!important}
+.hero::before{display:none}
+.hero .bubbles{z-index:1}.hero .hero-grid{z-index:2}.hero .smile-edge{position:relative;z-index:2}
+.reviews{background:color-mix(in srgb,var(--surface) 72%,transparent)}
+.brush-sec{background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--aqua) 16%,transparent))}
+
+/* shimmer CTA + animated gradient borders + spotlight + click sparks */
+.btn.primary::after{content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.6) 50%,transparent 70%);transform:translateX(-130%);animation:shimmer 3.4s ease-in-out infinite}
+@keyframes shimmer{0%,55%{transform:translateX(-130%)}100%{transform:translateX(130%)}}
+@property --ang{syntax:'<angle>';initial-value:0deg;inherits:false}
+.sim-panel,.sugar-card,.card,.brush-panel{border:2px solid transparent;background:linear-gradient(var(--surface),var(--surface)) padding-box,conic-gradient(from var(--ang),var(--aqua-deep),var(--aqua),var(--coral),var(--aqua-deep)) border-box}
+@media (hover:hover){.sim-panel:hover,.sugar-card:hover,.card:hover,.brush-panel:hover{animation:spinb 5s linear infinite}}
+@keyframes spinb{to{--ang:360deg}}
+.svc-item{position:relative;isolation:isolate}
+.svc-item::before{content:"";position:absolute;inset:0 -16px;border-radius:22px;z-index:-1;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),color-mix(in srgb,var(--aqua) 38%,transparent),transparent 65%);opacity:0;transition:opacity .35s;pointer-events:none}
+@media (hover:hover){.svc-item:hover::before{opacity:1}}
+.spark-burst{position:fixed;width:70px;height:70px;margin:-35px 0 0 -35px;pointer-events:none;z-index:300;overflow:visible}
+
+/* Light Steel palette (default): grays only, stays light even in dark mode */
+html[data-palette="steel"][data-palette]{--pearl:#E9ECEF;--surface:#F8F9FA;--ink:#212529;--muted:#495057;--line:rgba(33,37,41,.14);--blush:#DEE2E6;--night:#343A40;--night-2:#495057;--on-night:#F8F9FA;--night-muted:#CED4DA;--aqua:#ADB5BD;--aqua-deep:#495057;--coral:#212529;--on-coral:#F8F9FA;--hero-base:#DEE2E6;color-scheme:light}
+html[data-palette="steel"] .hero{background:var(--hero-base)}
+html[data-palette="steel"] .hero,html[data-palette="steel"] .process,html[data-palette="steel"] .book,html[data-palette="steel"] .foot{--on-night:var(--ink);--night-muted:var(--muted);color:var(--ink)}
+html[data-palette="steel"] .process{background:#DEE2E6}
+html[data-palette="steel"] .book,html[data-palette="steel"] .foot{background:#CED4DA}
+html[data-palette="steel"] .foot{border-color:var(--line)}
+html[data-palette="steel"] .track{background:rgba(10,37,64,.12)}
+html[data-palette="steel"] .hours li{border-color:var(--line)}
+html[data-palette="steel"] .site-header.on-dark{color:var(--ink)}
+html[data-palette="steel"] .on-dark .brand svg{color:var(--aqua-deep)}
+html[data-palette="steel"].top-dark body::before{background:var(--hero-base)}
+html[data-palette="steel"] .spark{color:var(--coral)}
+html[data-palette="steel"] .trust svg{color:var(--aqua-deep)}
+html[data-palette="steel"] .btn.primary::before{background:#495057}
+html[data-palette="steel"] .bubbles span{border-color:#ADB5BD}
+
+@media (hover:none),(max-width:760px){.bg-mesh::after{display:none}.bg-mesh{animation-duration:24s}.bg-mesh::before{animation-duration:20s}.bubbles span:nth-child(n+6){display:none}}
+
+@media (hover:none),(max-width:760px){
+  .bg-mesh::before{display:none}
+  .bg-mesh,.bg-mesh::before,.bg-mesh::after{inset:-6vmax}
+  .bg-p > span{will-change:auto}
+  .aurora::before,.aurora::after{content:"";position:absolute;inset:-25%;pointer-events:none;will-change:transform}
+  .aurora::before{background:radial-gradient(38% 26% at 30% 42%,color-mix(in srgb,var(--aqua-deep) 50%,transparent),transparent 70%),radial-gradient(34% 24% at 72% 30%,color-mix(in srgb,var(--aqua) 70%,transparent),transparent 70%);animation:aur1 9s ease-in-out infinite alternate}
+  .aurora::after{background:radial-gradient(42% 28% at 58% 68%,color-mix(in srgb,var(--aqua-deep) 35%,transparent),transparent 70%);animation:aur2 12s ease-in-out infinite alternate}
+}
+@keyframes aur1{to{transform:translate3d(14%,9%,0) rotate(10deg)}}
+@keyframes aur2{to{transform:translate3d(-15%,-7%,0) rotate(-12deg)}}
+.offscreen,.offscreen *{animation-play-state:paused!important}
+
+/* light-blue palette: the whole site stays light blue (also when the phone is in dark mode) */
+:root{--hero-base:var(--night)}
+html[data-palette="blue"][data-palette]{--pearl:#E2F1FF;--surface:#FFFFFF;--ink:#0A2540;--muted:#4A6480;--line:rgba(10,37,64,.13);--blush:#CDE6FF;--hero-base:#C4E2FF;color-scheme:light}
+html[data-palette="blue"] .hero{background:var(--hero-base)}
+html[data-palette="blue"] .hero,html[data-palette="blue"] .process,html[data-palette="blue"] .book,html[data-palette="blue"] .foot{--on-night:var(--ink);--night-muted:var(--muted);color:var(--ink)}
+html[data-palette="blue"] .process{background:#D2EAFF}
+html[data-palette="blue"] .book,html[data-palette="blue"] .foot{background:#C9E5FF}
+html[data-palette="blue"] .foot{border-color:var(--line)}
+html[data-palette="blue"] .track{background:rgba(10,37,64,.12)}
+html[data-palette="blue"] .hours li{border-color:var(--line)}
+html[data-palette="blue"] .site-header.on-dark{color:var(--ink)}
+html[data-palette="blue"] .on-dark .brand svg{color:var(--aqua-deep)}
+html[data-palette="blue"].top-dark body::before{background:var(--hero-base)}
+html[data-palette="blue"] .spark{color:var(--coral)}
+html[data-palette="blue"] .trust svg{color:var(--aqua-deep)}
+
+/* progress + palette switcher */
+.progress{position:absolute;inset-inline:0;bottom:-1px;height:3px;background:linear-gradient(90deg,var(--coral),var(--aqua-deep));transform:scaleX(0);transform-origin:right;pointer-events:none}
+.pal{position:relative}
+.pal-btn{width:46px;height:46px;border-radius:50%;border:2px solid currentColor;background:none;display:grid;place-items:center;padding:0}
+.pal-btn span{display:flex}
+.pal-btn i{width:10px;height:10px;border-radius:50%;margin-inline:-2px;border:1.5px solid rgba(255,255,255,.7)}
+.pal-pop{position:absolute;top:56px;left:0;z-index:5;background:var(--surface);color:var(--ink);border-radius:22px;padding:10px;display:grid;gap:6px;min-width:200px;box-shadow:0 24px 60px -20px rgba(0,0,0,.35);transform-origin:top left}
+.pal-pop button{display:flex;align-items:center;gap:10px;border:0;background:none;border-radius:14px;padding:10px 12px;font-family:var(--display);font-weight:600;font-size:15px;text-align:right}
+.pal-pop button:hover,.pal-pop button[aria-pressed="true"]{background:var(--pearl)}
+.pal-pop .dots{display:flex}
+.pal-pop .dots i{width:18px;height:18px;border-radius:50%;margin-inline-start:-5px;border:2px solid var(--surface)}
+.pal-wipe{position:fixed;inset:0;z-index:200;pointer-events:none}
+@media (max-width:1080px){.pal{margin-inline-start:auto}.burger{margin-inline-start:0}}
+
+/* hero bubbles */
+.bubbles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.bubbles span{position:absolute;bottom:-40px;border-radius:50%;border:1.5px solid color-mix(in srgb,var(--aqua) 60%,transparent);background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.35),transparent 60%);animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-120vh) translateX(30px)}}
+
+/* marquee */
+.marquee{overflow:hidden;background:var(--aqua-deep);color:#fff;padding-block:18px;transform:rotate(-1.6deg);margin-block:-10px 0;position:relative;z-index:2;box-shadow:0 20px 40px -20px color-mix(in srgb,var(--aqua-deep) 70%,transparent)}
+.mq-row{overflow:hidden;white-space:nowrap}
+.mq-track{display:inline-flex;align-items:center;gap:28px;padding-inline-end:28px;will-change:transform}
+.mq-item{font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,4vw,2.8rem);line-height:1.3;flex:none}
+.mq-track svg{width:clamp(26px,3.4vw,40px);height:auto;flex:none;color:var(--coral)}
+
+/* simulator */
+.sim{display:grid;gap:clamp(18px,3vw,32px);margin-top:clamp(28px,4vw,44px);align-items:start}
+@media (min-width:980px){.sim{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr)}}
+.sim-visual{position:relative;border-radius:36px;background:linear-gradient(160deg,var(--blush),color-mix(in srgb,var(--aqua) 30%,var(--pearl)));padding:clamp(14px,3vw,32px);min-height:clamp(280px,48vw,520px);display:grid;place-items:center;overflow:hidden}
+.sim-visual > svg{width:100%;height:auto;max-height:520px;display:block;overflow:visible}
+.sim-visual .xray{width:100%;height:clamp(300px,52vw,520px)}
+.pt{cursor:pointer;outline:none}
+.pt-hl{fill:var(--aqua-deep);opacity:0;transition:opacity .25s}
+@media (hover:hover){.pt:hover .pt-hl{opacity:.3}}
+.pt:focus-visible .pt-hl{opacity:.4}
+.pt.sel .pt-hl{opacity:.55}
+.tap{fill:none;stroke:#fff;stroke-width:3}
+.sim-hint{position:absolute;top:16px;inset-inline:0;text-align:center;font-family:var(--display);font-weight:700;font-size:15px;color:var(--ink);pointer-events:none}
+.sim-panel{background:var(--surface);border-radius:30px;padding:clamp(18px,3vw,28px);box-shadow:0 30px 60px -40px rgba(20,10,60,.35)}
+.sim-panel h3{font-size:1.35rem;font-weight:800;line-height:1.4}
+.sim-panel .sub{color:var(--muted);margin:4px 0 16px;font-size:15px}
+.opts{display:grid;gap:10px}
+.opt{display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px;align-items:center;text-align:right;border:1.5px solid var(--line);border-radius:20px;padding:12px;background:var(--pearl);transition:border-color .2s,transform .2s}
+@media (hover:hover){.opt:hover{border-color:var(--aqua-deep);transform:translateX(-4px)}}
+.opt-ic{width:48px;height:48px;border-radius:16px;background:var(--night);color:var(--aqua);display:grid;place-items:center}
+.opt-ic svg{width:26px;height:26px}
+.opt b{display:block;font-family:var(--display);font-size:1.02rem}
+.opt small{color:var(--muted);font-size:14px}
+.opts-label{font-family:var(--display);font-weight:700;font-size:14px;color:var(--aqua-deep);margin:18px 0 8px}
+.steps-list{list-style:none;margin:16px 0;padding:0;display:grid;gap:6px}
+.steps-list button{width:100%;display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:center;text-align:right;border:0;background:none;border-radius:14px;padding:8px 10px;font-size:15px;color:var(--muted);transition:background .25s,color .25s}
+.steps-list button span:first-child{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--pearl);font-family:var(--display);font-weight:800;font-size:14px;transition:background .25s,color .25s}
+.steps-list button.done{color:var(--ink)}
+.steps-list button.done span:first-child{background:color-mix(in srgb,var(--aqua-deep) 18%,var(--pearl));color:var(--aqua-deep)}
+.steps-list button.cur{background:var(--pearl);color:var(--ink);font-weight:600}
+.steps-list button.cur span:first-child{background:var(--aqua-deep);color:#fff}
+.step-desc{background:var(--pearl);border-radius:18px;padding:14px 16px;margin:0 0 16px;min-height:4.6em}
+.step-desc b{display:block;font-family:var(--display)}
+.step-desc span{color:var(--muted);font-size:15px}
+.ctrls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ctrls .btn{padding:11px 18px;font-size:15px}
+.auto{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);margin-inline-start:auto;cursor:pointer}
+.auto input{width:18px;height:18px;accent-color:var(--aqua-deep)}
+.back-link{border:0;background:none;color:var(--aqua-deep);font-family:var(--display);font-weight:600;padding:8px 0;margin-top:10px;text-decoration:underline;text-underline-offset:4px}
+.stage-t{font-family:var(--display);font-weight:800;font-size:20px;fill:#fff}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+/* =========================================================
+   بيانات العيادة — غيّرها من هون والموقع كله بيتحدّث
+   ========================================================= */
+const CLINIC = {
+  name: 'عيادة د. محمود دويكات',
+  doctor: 'د. محمود دويكات',
+  tagline: 'لطب وتجميل الأسنان',
+  role: 'طب وتجميل الأسنان',
+  city: 'عمّان',
+  phoneDisplay: '079 000 0000',   // رقم تجريبي
+  phoneTel: '+962790000000',      // رقم تجريبي
+  whatsapp: '',                   // مثلاً '9627XXXXXXXX' — فاضي = الحجز بيعرض معاينة للرسالة
+  address: 'عمّان، الشميساني، الطابق الثاني',
+  mapsQuery: 'Shmeisani, Amman',
+  hours: [['السبت – الخميس', '10 صباحاً – 8 مساءً'], ['الجمعة', 'مغلق']],
+  reviews: [
+    { text: 'كنت خايفة من علاج العصب، بس الدكتور شرحلي كل خطوة وما حسّيت بإشي.', who: 'علاج عصب' },
+    { text: 'عرفت السعر وعدد الجلسات من أول زيارة، وما كان في ولا مفاجأة.', who: 'تبييض' },
+    { text: 'ابني صار يستنّى موعده عند الدكتور، وهاي لحالها إنجاز.', who: 'أسنان أطفال' }
+  ]
+};
+
+const SERVICES = [
+  { k: 'clean', t: 'فحص وتنظيف', d: 'فحص شامل وإزالة الجير وتلميع، والأفضل مرة كل ستة شهور.' },
+  { k: 'white', t: 'تبييض الأسنان', d: 'جلسة بالعيادة بتفتّح لون أسنانك بشكل واضح وآمن على المينا.' },
+  { k: 'align', t: 'تقويم شفاف', d: 'قوالب شفافة بتنشال وبترجع، بدون أسلاك ولا حديد.' },
+  { k: 'implant', t: 'زراعة الأسنان', d: 'تعويض السن المفقود بزرعة ثابتة بتنحس وبتشتغل زي السن الطبيعي.' },
+  { k: 'fill', t: 'حشوات تجميلية', d: 'حشوات بلون سنّك الطبيعي، ما بتبيّن.' },
+  { k: 'root', t: 'علاج العصب', d: 'بنوقف الألم ونحافظ على السن بدل ما نخلعه.' },
+  { k: 'veneer', t: 'قشور الفينير', d: 'تعديل شكل ولون الأسنان الأمامية بطبقة رقيقة.' },
+  { k: 'kids', t: 'أسنان الأطفال', d: 'جلسات هادية، والطفل بيتعرّف على العيادة قبل أي علاج.' }
+];
+const STEPS = [
+  { t: 'احجز موعدك', d: 'عبر واتساب أو تلفون، واختار اليوم والفترة اللي بتناسبك.' },
+  { t: 'الفحص والتشخيص', d: 'فحص كامل، وصورة أشعة إذا لزم، وشرح للمشكلة بكلام واضح.' },
+  { t: 'خطة وسعر قبل ما نبلّش', d: 'بتعرف عدد الجلسات والتكلفة من البداية، وبتقرر على راحتك.' },
+  { t: 'العلاج والمتابعة', d: 'جلسات بمواعيد ثابتة، ومتابعة بعد العلاج لنطمن إنه كل إشي تمام.' }
+];
+const FAQ = [
+  { q: 'هل التبييض بيضر الأسنان؟', a: 'لما يكون بالعيادة وتحت إشراف طبيب، بكون آمن على المينا. ممكن تحس بحساسية خفيفة يوم أو يومين وبتروح لحالها.' },
+  { q: 'قديش بتطوّل جلسة التنظيف؟', a: 'عادةً بين 30 و45 دقيقة، حسب كمية الجير.' },
+  { q: 'هل في تقسيط أو خيارات دفع؟', a: 'تواصل معنا وبنعرّفك على خيارات الدفع المتاحة لخطة علاجك.' },
+  { q: 'عندي ألم قوي، بتستقبلوا حالات طارئة؟', a: 'اتصل فينا مباشرة وبنحاول نشوفك بنفس اليوم.' },
+  { q: 'هل لازم أعمل صورة أشعة بكل زيارة؟', a: 'لا، بس لما يحتاجها التشخيص. الطبيب بيحكيلك قبل وليش.' }
+];
+
+/* ========================================================= */
+const { useState, useEffect, useRef } = React;
+const html = htm.bind(React.createElement);
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+const isMobile = !finePointer;
+const hasGsap = !!window.gsap;
+const FX = hasGsap && !reduceMotion;
+if(hasGsap) gsap.registerPlugin(...[window.ScrollTrigger, window.SplitText].filter(Boolean));
+if(window.ScrollTrigger) ScrollTrigger.config({ ignoreMobileResize: true, autoRefreshEvents: 'visibilitychange,DOMContentLoaded,load' });
+const fontsReady = Promise.race([document.fonts ? document.fonts.ready : Promise.resolve(), new Promise(r => setTimeout(r, 1500))]);
+
+function go(id){
+  const el = document.getElementById(id); if(!el) return;
+  if(window.__lenis) window.__lenis.scrollTo(el, { offset: -76 });
+  else el.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+}
+function todayISO(){ const d = new Date(); d.setMinutes(d.getMinutes() - d.getTimezoneOffset()); return d.toISOString().slice(0,10); }
+const callHref = CLINIC.phoneTel ? 'tel:' + CLINIC.phoneTel : '#contact';
+const mapsHref = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(CLINIC.mapsQuery);
+
+/* ---------- icons ---------- */
+const TOOTH = 'M8 3.5c-2.6 0-4.3 2-4.3 4.6 0 2 .8 3.4 1.4 5.2.6 1.9.9 4.1 1.5 6.4.4 1.6 2.1 1.6 2.5 0l.9-3.5c.3-1.2 1.7-1.2 2 0l.9 3.5c.4 1.6 2.1 1.6 2.5 0 .6-2.3.9-4.5 1.5-6.4.6-1.8 1.4-3.2 1.4-5.2 0-2.6-1.7-4.6-4.3-4.6-1.7 0-2.5 1-4 1s-2.3-1-4-1z';
+const ICON_EXTRA = {
+  clean: html`<path pathLength="1" d="M17.5 2.5l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/>`,
+  white: html`<path pathLength="1" d="M18.5 1.8v3.4M16.8 3.5h3.4M20.6 8.2v2M19.6 9.2h2"/>`,
+  align: html`<path pathLength="1" d="M4 6.5c1.5 1.4 4.6 2.1 8 2.1s6.5-.7 8-2.1"/>`,
+  implant: html`<path pathLength="1" d="M10 14.5h4M10.4 16.5h3.2M10.8 18.5h2.4"/>`,
+  fill: html`<circle pathLength="1" cx="12" cy="8.6" r="1.8"/>`,
+  root: html`<path pathLength="1" d="M10.8 9.5v5M13.2 9.5v5"/>`,
+  veneer: html`<path pathLength="1" d="M7 6.2c1.6.6 3.2.9 5 .9s3.4-.3 5-.9"/>`,
+  kids: html`<path pathLength="1" d="M9.6 10.6c.8.9 1.6 1.2 2.4 1.2s1.6-.3 2.4-1.2M9.8 7.6h.01M14.2 7.6h.01"/>`
+};
+const ToothLogo = () => html`<svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="lg-logo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#9FF0E6"/><stop offset="1" stopColor="#0E8F8A"/></linearGradient></defs><path d=${TOOTH} fill="currentColor"/><path d="M15.6 6.4c.9.4 1.5 1.1 1.6 2.1" fill="none" stroke="#fff" strokeWidth="1.4" strokeLinecap="round" opacity=".85"/></svg>`;
+const WaIcon = () => html`<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-1.4-.6-2.5-1.6-3.2-2.9-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.8.8-1 1.9-.6 3 .5 1.3 1.3 2.5 2.3 3.4 1.2 1.1 2.6 1.8 4.1 2.1.9.2 1.9 0 2.6-.6.3-.3.5-.7.5-1.1 0-.3 0-.5-.1-.6z"/></svg>`;
+const PhoneIcon = () => html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.6 4-2.2 1.4a11 11 0 0 0 5.7 5.7l1.4-2.2 4 1.6V18a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>`;
+const Check = () => html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5" opacity=".35"/><path d="M7.5 12.3l3 3 6-6.6"/></svg>`;
+const Star4 = () => html`<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c.8 6.6 5.4 11.2 12 12-6.6.8-11.2 5.4-12 12-.8-6.6-5.4-11.2-12-12C6.6 11.2 11.2 6.6 12 0z"/></svg>`;
+
+/* ---------- realistic smile art (front view) ---------- */
+const UP_SPEC = [[64,118],[50,100],[50,108],[44,88],[40,78]];
+const LOW_SPEC = [[40,62],[40,62],[42,64],[46,60],[46,56]];
+const arch = (spec, gap) => { const out = []; let off = 0; spec.forEach(([w,h], i) => { const c = off + w/2; out.push({ dx: c, w, h, i }, { dx: -c, w, h, i }); off += w + gap; }); return out; };
+const UPPER = arch(UP_SPEC, 2), LOWER = arch(LOW_SPEC, 2);
+const zenU = dx => 84 + 0.00055*dx*dx;
+const topL = dx => 198 - 0.0006*dx*dx;
+const depth = dx => Math.min(.28, Math.pow(Math.abs(dx)/256, 2) * .32);
+const byOuter = a => [...a].sort((p, q) => Math.abs(q.dx) - Math.abs(p.dx));
+const MOUTH = 'M40,120 C150,40 450,40 560,120 C480,270 120,270 40,120 Z';
+const UPPER_LIP = 'M6,122 C110,18 228,6 300,30 C372,6 490,18 594,122 L560,120 C450,40 150,40 40,120 Z';
+const LOWER_LIP = 'M6,122 L40,120 C120,270 480,270 560,120 L594,122 C500,332 100,332 6,122 Z';
+function upPath(cx, y, w, h, canine){
+  const x = cx - w/2, b = y + h;
+  if(canine) return `M${x+.06*w},${y} C${x},${y+.45*h} ${x+.02*w},${y+.78*h} ${x+.18*w},${b-.07*h} Q${x+.5*w},${b+.07*h} ${x+.82*w},${b-.07*h} C${x+.98*w},${y+.78*h} ${x+w},${y+.45*h} ${x+.94*w},${y} Z`;
+  return `M${x+.05*w},${y} C${x},${y+.4*h} ${x+.01*w},${y+.82*h} ${x+.08*w},${b-.03*h} Q${x+.12*w},${b} ${x+.3*w},${b} L${x+.7*w},${b} Q${x+.88*w},${b} ${x+.92*w},${b-.03*h} C${x+.99*w},${y+.82*h} ${x+w},${y+.4*h} ${x+.95*w},${y} Z`;
+}
+function lowPath(cx, y, w, h){
+  const x = cx - w/2, b = y + h;
+  return `M${x+.06*w},${b} C${x},${y+.5*h} ${x+.02*w},${y+.12*h} ${x+.12*w},${y+.02*h} Q${x+.3*w},${y} ${x+.5*w},${y} Q${x+.7*w},${y} ${x+.88*w},${y+.02*h} C${x+.98*w},${y+.12*h} ${x+w},${y+.5*h} ${x+.94*w},${b} Z`;
+}
+const UP_D = UPPER.map(t => ({ ...t, d: upPath(300 + t.dx, zenU(t.dx) - 18, t.w, t.h + 18, t.i === 2), cx: 300 + t.dx, y: zenU(t.dx) - 18, hh: t.h + 18 }));
+const LOW_D = LOWER.map(t => ({ ...t, d: lowPath(300 + t.dx, topL(t.dx), t.w, t.h + 40) }));
+function gumUpper(){
+  const ts = [...UPPER].sort((a, b) => a.dx - b.dx);
+  let d = `M20,0 L20,${zenU(-270) + 18}`;
+  ts.forEach(t => { const l = 300 + t.dx - t.w/2 - 1, r = 300 + t.dx + t.w/2 + 1; const Pl = zenU(t.dx - t.w/2) + 15, Pr = zenU(t.dx + t.w/2) + 15; const Z = zenU(t.dx) - 3; const C = 2*Z - (Pl + Pr)/2;
+    d += ` L${l},${Pl} Q${300 + t.dx},${C} ${r},${Pr}`; });
+  return d + ` L580,${zenU(270) + 18} L580,0 Z`;
+}
+function gumLower(){
+  const ts = [...LOWER].sort((a, b) => a.dx - b.dx);
+  let d = `M20,300 L20,${topL(-240) + 26}`;
+  ts.forEach(t => { const l = 300 + t.dx - t.w/2 - 1, r = 300 + t.dx + t.w/2 + 1; const Pl = topL(t.dx - t.w/2) + 24, Pr = topL(t.dx + t.w/2) + 24; const Z = topL(t.dx) + 38; const C = 2*Z - (Pl + Pr)/2;
+    d += ` L${l},${Pl} Q${300 + t.dx},${C} ${r},${Pr}`; });
+  return d + ` L580,${topL(240) + 26} L580,300 Z`;
+}
+const GUM_U = gumUpper(), GUM_L = gumLower();
+
+function SmileDefs({ p }){
+  return html`<defs>
+    <radialGradient id=${p + '-white'} cx=".42" cy=".38" r=".78"><stop offset="0" stopColor="#FFFFFF"/><stop offset=".55" stopColor="#F6F7F3"/><stop offset=".85" stopColor="#E3E7E2"/><stop offset="1" stopColor="#C8CFCA"/></radialGradient>
+    <radialGradient id=${p + '-ivory'} cx=".42" cy=".38" r=".78"><stop offset="0" stopColor="#F6E9C2"/><stop offset=".55" stopColor="#E8D29B"/><stop offset=".85" stopColor="#D5B97A"/><stop offset="1" stopColor="#BC9C60"/></radialGradient>
+    <linearGradient id=${p + '-edge'} x1="0" y1="0" x2="0" y2="1"><stop offset=".7" stopColor="#B9CEDA" stopOpacity="0"/><stop offset="1" stopColor="#9FBBCD" stopOpacity=".6"/></linearGradient>
+    <radialGradient id=${p + '-hl'}><stop offset="0" stopColor="#fff" stopOpacity=".75"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></radialGradient>
+    <linearGradient id=${p + '-gum'} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#D2606F"/><stop offset="1" stopColor="#F4A5AE"/></linearGradient>
+    <linearGradient id=${p + '-gumL'} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#F4A5AE"/><stop offset="1" stopColor="#D2606F"/></linearGradient>
+    <linearGradient id=${p + '-lip'} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#DC7C87"/><stop offset="1" stopColor="#A94253"/></linearGradient>
+    <radialGradient id=${p + '-mouth'} cx=".5" cy=".45" r=".62"><stop offset="0" stopColor="#5C2331"/><stop offset="1" stopColor="#1E070D"/></radialGradient>
+    <linearGradient id=${p + '-shine'} x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#fff" stopOpacity="0"/><stop offset=".5" stopColor="#fff" stopOpacity=".95"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient>
+    <clipPath id=${p + '-mclip'}><path d=${MOUTH}/></clipPath>
+    <clipPath id=${p + '-tclip'}>${UP_D.map((t, k) => html`<path key=${k} d=${t.d}/>`)}</clipPath>
+  </defs>`;
+}
+function Teeth({ p, kind }){
+  const fill = `url(#${p}-${kind === 'before' ? 'ivory' : 'white'})`;
+  return html`<g>
+    <g className="t-low">${byOuter(LOW_D).map((t, k) => html`<g key=${k}>
+      <path d=${t.d} fill=${fill} stroke="rgba(100,80,70,.3)" strokeWidth="1.2"/>
+      <path d=${t.d} fill="#2a1418" opacity=${depth(t.dx) + .14}/>
+    </g>`)}</g>
+    <g className="t-up">${byOuter(UP_D).map((t, k) => html`<g key=${k} className="tu">
+      <path d=${t.d} fill=${fill} stroke="rgba(100,80,70,.3)" strokeWidth="1.2"/>
+      <path d=${t.d} fill=${`url(#${p}-edge)`}/>
+      <ellipse cx=${t.cx - t.w*.17} cy=${t.y + t.hh*.52} rx=${t.w*.09} ry=${t.hh*.26} fill=${`url(#${p}-hl)`}/>
+      <path d=${t.d} fill="#2a1418" opacity=${depth(t.dx)}/>
+    </g>`)}</g>
+    ${kind === 'before' && html`<g fill="#9E7A3E" opacity=".3">
+      <ellipse cx="268" cy="104" rx="16" ry="6"/><ellipse cx="333" cy="104" rx="15" ry="6"/><ellipse cx="212" cy="108" rx="11" ry="5"/>
+      <ellipse cx="388" cy="108" rx="11" ry="5"/><ellipse cx="300" cy="184" rx="10" ry="4"/><ellipse cx="160" cy="118" rx="9" ry="4"/><ellipse cx="440" cy="118" rx="9" ry="4"/>
+    </g>`}
+  </g>`;
+}
+function Lips({ p }){
+  return html`<g className="lips-front">
+    <path d=${UPPER_LIP} fill=${`url(#${p}-lip)`}/>
+    <path d=${LOWER_LIP} fill=${`url(#${p}-lip)`}/>
+    <path d="M200,262 Q300,280 400,262" fill="none" stroke="#fff" strokeOpacity=".32" strokeWidth="8" strokeLinecap="round"/>
+    <path d="M165,52 Q225,30 282,40" fill="none" stroke="#fff" strokeOpacity=".22" strokeWidth="5" strokeLinecap="round"/>
+  </g>`;
+}
+
+/* ---------- 3D tooth (hero) ---------- */
+function buildTooth(mat){
+  const grp = new THREE.Group();
+  const g = new THREE.SphereGeometry(1, isMobile ? 72 : 80, isMobile ? 48 : 56); const p = g.attributes.position;
+  const cusps = [[.42, .38], [-.42, .38], [.42, -.38], [-.42, -.38]];
+  for(let i = 0; i < p.count; i++){
+    let x = p.getX(i), y = p.getY(i), z = p.getZ(i);
+    const k = 1 + .16 * (1 - Math.abs(y)); x *= 1.02 * k; z *= .9 * k;
+    if(y > 0){
+      let bump = 0; cusps.forEach(([cx, cz]) => { bump += Math.exp(-((x - cx)**2 + (z - cz)**2) / .09); });
+      const fiss = Math.min(1, Math.exp(-(x*x) / .012) + Math.exp(-(z*z) / .012));
+      y = y * .6 + y * y * (.24 * bump - .09 * fiss);
+    } else {
+      const t = -y; const taper = 1 - .3 * t; x *= taper; z *= taper; y *= .85;
+    }
+    p.setXYZ(i, x, y, z);
+  }
+  g.computeVertexNormals();
+  grp.add(new THREE.Mesh(g, mat));
+  const root = side => {
+    const rg = new THREE.CylinderGeometry(.36, .1, 2.1, 36, 18); const rp = rg.attributes.position;
+    for(let i = 0; i < rp.count; i++){ const y = rp.getY(i); const t = (1.05 - y) / 2.1; rp.setX(i, rp.getX(i) + side * .22 * t * t); rp.setZ(i, rp.getZ(i) - .06 * t); }
+    rg.computeVertexNormals();
+    const m = new THREE.Mesh(rg, mat); m.position.set(side * .4, -1.45, 0); m.rotation.z = side * .08; return m;
+  };
+  grp.add(root(1), root(-1));
+  return grp;
+}
+
+function Tooth3D({ startRef }){
+  const host = useRef();
+  useEffect(() => {
+    const el = host.current;
+    if(!window.THREE){ el.classList.add('no3d'); return; }
+    let renderer;
+    try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); } catch(e){ el.classList.add('no3d'); return; }
+    if(!renderer.getContext()){ el.classList.add('no3d'); return; }
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.outputEncoding = THREE.sRGBEncoding;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
+    el.appendChild(renderer.domElement);
+    const scene = new THREE.Scene();
+    const cam = new THREE.PerspectiveCamera(30, 1, .1, 100); cam.position.set(0, 0, 8.4);
+
+    // soft studio environment for glossy enamel
+    const pm = new THREE.PMREMGenerator(renderer);
+    const env = new THREE.Scene();
+    const cv = document.createElement('canvas'); cv.width = 8; cv.height = 256;
+    const cx = cv.getContext('2d'); const gr = cx.createLinearGradient(0, 0, 0, 256);
+    gr.addColorStop(0, '#ffffff'); gr.addColorStop(.45, '#a6e6df'); gr.addColorStop(1, '#0a1a26'); cx.fillStyle = gr; cx.fillRect(0, 0, 8, 256);
+    env.add(new THREE.Mesh(new THREE.SphereGeometry(20, 32, 16), new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(cv), side: THREE.BackSide })));
+    const soft = (x, y, z, w, h, c) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color: c, side: THREE.DoubleSide })); m.position.set(x, y, z); m.lookAt(0, 0, 0); env.add(m); };
+    soft(6, 6, 6, 8, 8, 0xffffff); soft(-8, 2, 4, 4, 10, 0xc4f6f0); soft(0, -6, -8, 10, 3, 0xffd6da);
+    const envTex = pm.fromScene(env, .03).texture; scene.environment = envTex;
+
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x0a1a26, .55));
+    const key = new THREE.DirectionalLight(0xffffff, 1.5); key.position.set(3, 4, 5); scene.add(key);
+    const rim = new THREE.DirectionalLight(0x7fe0d6, 1.6); rim.position.set(-4, 1, -3); scene.add(rim);
+    const tint = () => { try{ rim.color.set(cssVar('--aqua') || '#7fe0d6'); }catch(e){} }; tint(); window.addEventListener('palette', tint);
+    const warm = new THREE.PointLight(0xffc2c8, .8, 20); warm.position.set(2, -3, 3); scene.add(warm);
+
+    const mat = isMobile ? new THREE.MeshStandardMaterial({ color: 0xf6f3ec, roughness: .2, metalness: 0 }) : new THREE.MeshPhysicalMaterial({ color: 0xf6f3ec, roughness: .26, metalness: 0, clearcoat: 1, clearcoatRoughness: .1 });
+    const tooth = buildTooth(mat); scene.add(tooth);
+    const state = { spin: FX ? -2.6 : 0, s: FX ? .001 : 1 };
+    tooth.scale.setScalar(state.s);
+
+    const resize = () => { const w = el.clientWidth, h = el.clientHeight; if(!w || !h) return; renderer.setSize(w, h, false); cam.aspect = w / h; cam.fov = w < 520 ? 34 : 30; cam.updateProjectionMatrix(); };
+    resize(); const ro = new ResizeObserver(resize); ro.observe(el);
+
+    const tilt = { x: 0, y: 0 }, target = { x: 0, y: 0 };
+    const pmove = e => { target.x = (e.clientX / window.innerWidth - .5) * 2; target.y = (e.clientY / window.innerHeight - .5) * 2; };
+    if(finePointer) window.addEventListener('pointermove', pmove);
+    let visible = true; const io = new IntersectionObserver(([e]) => { visible = e.isIntersecting; }); io.observe(el);
+    let raf, last = 0; const t0 = performance.now();
+    const loop = () => {
+      raf = requestAnimationFrame(loop);
+      if(!visible) return;
+      const now = performance.now();
+      const t = (now - t0) / 1000;
+      const sp = Math.min(1, window.scrollY / Math.max(1, el.closest('.hero').offsetHeight));
+      tilt.x += (target.x - tilt.x) * .06; tilt.y += (target.y - tilt.y) * .06;
+      const still = reduceMotion ? 0 : 1;
+      tooth.scale.setScalar(state.s * (1 - sp * .15));
+      tooth.rotation.y = state.spin + still * (t * .35 + sp * 3) - tilt.x * .5;
+      tooth.rotation.x = .2 + tilt.y * .3 + sp * .5;
+      tooth.rotation.z = -.08 + still * Math.sin(t * .7) * .05;
+      tooth.position.y = .62 + still * Math.sin(t * 1.3) * .09 - sp * .6;
+      renderer.render(scene, cam);
+    };
+    loop();
+    startRef.current = () => {
+      if(!FX) return;
+      gsap.to(state, { s: 1, duration: 1.6, ease: 'elastic.out(1,.55)' });
+      gsap.to(state, { spin: 0, duration: 2.2, ease: 'expo.out' });
+    };
+    return () => { cancelAnimationFrame(raf); ro.disconnect(); io.disconnect(); window.removeEventListener('pointermove', pmove); window.removeEventListener('palette', tint); renderer.dispose(); pm.dispose(); envTex.dispose(); el.removeChild(renderer.domElement); };
+  }, []);
+  const sparks = [[12, 18, 1], [80, 12, .7], [88, 58, .9], [8, 70, .6], [70, 86, .8], [30, 6, .5], [52, 92, .6]];
+  return html`<div className="hero-3d" ref=${host} role="img" aria-label="مجسّم سن">
+    <div className="glow"></div>
+    <svg className="fallback" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="fb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffffff"/><stop offset="1" stopColor="#bfe9e3"/></linearGradient></defs><path d=${TOOTH} fill="url(#fb)"/></svg>
+    ${sparks.map(([x, y, s], i) => html`<span key=${i} className="spark" style=${{ left: x + '%', top: y + '%', transform: `scale(${s})` }}><${Star4}/></span>`)}
+  </div>`;
+}
+
+
+/* =================== palette switcher =================== */
+const PALETTES = [
+  { k: 'steel', n: 'فولاذي فاتح', c: ['#6C757D', '#212529', '#DEE2E6'] },
+  { k: 'blue', n: 'أزرق فاتح', c: ['#1488DB', '#FFC93C', '#0B3A66'] },
+  { k: 'mint', n: 'نعناعي', c: ['#0FA374', '#FF6B6B', '#0B3A31'] },
+  { k: 'sky', n: 'أزرق ملكي', c: ['#2D6BFF', '#FFC93C', '#0B2545'] },
+  { k: 'peach', n: 'خوخي', c: ['#E0485F', '#2EC4B6', '#3B1E24'] }
+];
+const cssVar = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+(function(){ try{ const p = localStorage.getItem('dent-pal2'); document.documentElement.dataset.palette = (p && PALETTES.some(x => x.k === p)) ? p : 'steel'; }catch(e){ document.documentElement.dataset.palette = 'steel'; } })();
+
+function Palette(){
+  const [open, setOpen] = useState(false);
+  const [cur, setCur] = useState(document.documentElement.dataset.palette || 'steel');
+  const popRef = useRef(); const btnRef = useRef();
+  useEffect(() => {
+    if(!open) return;
+    if(FX) gsap.fromTo(popRef.current, { scale: .6, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: .5, ease: 'back.out(2.2)' });
+    const close = e => { if(!popRef.current.contains(e.target) && !btnRef.current.contains(e.target)) setOpen(false); };
+    const esc = e => { if(e.key === 'Escape') setOpen(false); };
+    document.addEventListener('pointerdown', close); document.addEventListener('keydown', esc);
+    return () => { document.removeEventListener('pointerdown', close); document.removeEventListener('keydown', esc); };
+  }, [open]);
+  const apply = k => {
+    document.documentElement.dataset.palette = k; setCur(k);
+    try{ localStorage.setItem('dent-pal2', k); }catch(e){}
+    window.dispatchEvent(new Event('palette'));
+  };
+  const pick = (p, e) => {
+    setOpen(false); if(p.k === cur) return;
+    if(!FX){ apply(p.k); return; }
+    const r = e.currentTarget.getBoundingClientRect(); const x = r.left + r.width / 2, y = r.top + r.height / 2;
+    const o = document.createElement('div'); o.className = 'pal-wipe'; o.style.background = p.c[2]; document.body.appendChild(o);
+    gsap.fromTo(o, { clipPath: `circle(0px at ${x}px ${y}px)` }, { clipPath: `circle(${Math.hypot(innerWidth, innerHeight)}px at ${x}px ${y}px)`, duration: .75, ease: 'power3.inOut',
+      onComplete: () => { apply(p.k); gsap.to(o, { autoAlpha: 0, duration: .55, delay: .05, onComplete: () => o.remove() }); } });
+  };
+  const curP = PALETTES.find(p => p.k === cur) || PALETTES[0];
+  return html`<div className="pal">
+    <button className="pal-btn" ref=${btnRef} aria-label="غيّر ألوان الموقع" aria-expanded=${open} onClick=${() => setOpen(!open)}>
+      <span>${curP.c.map((c, i) => html`<i key=${i} style=${{ background: c }}></i>`)}</span>
+    </button>
+    ${open && html`<div className="pal-pop" ref=${popRef} role="menu">
+      ${PALETTES.map(p => html`<button key=${p.k} role="menuitemradio" aria-pressed=${p.k === cur} aria-checked=${p.k === cur} onClick=${e => pick(p, e)}>
+        <span className="dots">${p.c.map((c, i) => html`<i key=${i} style=${{ background: c }}></i>`)}</span>${p.n}
+      </button>`)}
+    </div>`}
+  </div>`;
+}
+
+/* =================== aurora background (React Bits style, WebGL) =================== */
+const AURORA_FRAG = `
+uniform float uTime; uniform vec3 uC1; uniform vec3 uC2; uniform vec3 uC3; uniform vec3 uBase; varying vec2 vUv;
+vec3 permute(vec3 x){ return mod(((x*34.0)+1.0)*x, 289.0); }
+float snoise(vec2 v){
+  const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
+  vec2 i = floor(v + dot(v, C.yy)); vec2 x0 = v - i + dot(i, C.xx);
+  vec2 i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+  vec4 x12 = x0.xyxy + C.xxzz; x12.xy -= i1; i = mod(i, 289.0);
+  vec3 p = permute(permute(i.y + vec3(0.0, i1.y, 1.0)) + i.x + vec3(0.0, i1.x, 1.0));
+  vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0); m = m*m; m = m*m;
+  vec3 x = 2.0 * fract(p * C.www) - 1.0; vec3 h = abs(x) - 0.5; vec3 ox = floor(x + 0.5); vec3 a0 = x - ox;
+  m *= 1.79284291400159 - 0.85373472095314 * (a0*a0 + h*h);
+  vec3 g; g.x = a0.x*x0.x + h.x*x0.y; g.yz = a0.yz*x12.xz + h.yz*x12.yw;
+  return 130.0 * dot(m, g);
+}
+void main(){
+  vec2 uv = vUv; float t = uTime * 0.2;
+  vec3 col = uBase;
+  for(int k = 0; k < 3; k++){
+    float fk = float(k);
+    float n = snoise(vec2(uv.x * (1.5 + fk*0.5) + t * (1.0 + fk*0.35) + fk*3.7, t*0.7 + fk*1.9));
+    float n2 = snoise(vec2(uv.x * 4.0 - t*1.3 + fk, t*0.5));
+    float hgt = 0.66 + 0.16*n + 0.04*n2 - fk*0.15;
+    float d = uv.y - hgt;
+    float band = exp(-d*d*(16.0 + fk*8.0));
+    float curtain = exp(-max(-d, 0.0) * 5.0) * (1.0 - smoothstep(-0.02, 0.08, d));
+    vec3 c = (k == 0) ? uC1 : ((k == 1) ? uC2 : uC3);
+    float a = clamp(band * (0.6 - fk*0.12) + curtain * 0.22 * (1.0 - fk*0.3) * (0.6 + 0.4*n2), 0.0, 1.0);
+    col = mix(col, c, a * (k == 2 ? 0.3 : 1.0));
+  }
+  float vig = 1.0 - smoothstep(0.25, 1.25, length((uv - vec2(0.5, 0.42)) * vec2(1.2, 1.0)));
+  col = mix(uBase * 0.94, col, 0.65 + 0.35*vig);
+  col = mix(col, uBase, smoothstep(0.5, 1.0, uv.x) * 0.4);
+  gl_FragColor = vec4(col, 1.0);
+}`;
+function AuroraBG(){
+  const host = useRef();
+  useEffect(() => {
+    const el = host.current;
+    if(!window.THREE || reduceMotion || isMobile) return;
+    let r; try { r = new THREE.WebGLRenderer({ antialias: false, alpha: false, powerPreference: 'low-power' }); } catch(e){ return; }
+    if(!r.getContext()) return;
+    r.setPixelRatio(1); el.appendChild(r.domElement);
+    const U = { uTime: { value: 0 }, uC1: { value: new THREE.Color() }, uC2: { value: new THREE.Color() }, uC3: { value: new THREE.Color() }, uBase: { value: new THREE.Color() } };
+    const read = () => [cssVar('--aqua'), cssVar('--aqua-deep'), cssVar('--coral'), cssVar('--hero-base') || cssVar('--night')].map(c => new THREE.Color(c || '#000'));
+    const [a, b, c, base] = read(); U.uC1.value.copy(a); U.uC2.value.copy(b); U.uC3.value.copy(c); U.uBase.value.copy(base);
+    const repaint = () => { const cols = read(); [U.uC1, U.uC2, U.uC3, U.uBase].forEach((u, i) => { if(FX) gsap.to(u.value, { r: cols[i].r, g: cols[i].g, b: cols[i].b, duration: 1.2, ease: 'power2.inOut' }); else u.value.copy(cols[i]); }); };
+    window.addEventListener('palette', repaint);
+    const mat = new THREE.ShaderMaterial({ uniforms: U, vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position, 1.0); }', fragmentShader: AURORA_FRAG });
+    const scene = new THREE.Scene(); const cam = new THREE.Camera(); scene.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), mat));
+    const k = isMobile ? .25 : .45;
+    const resize = () => { const w = el.clientWidth, h = el.clientHeight; if(w && h) r.setSize(Math.max(2, Math.round(w * k)), Math.max(2, Math.round(h * k)), false); };
+    resize(); const ro = new ResizeObserver(resize); ro.observe(el);
+    let vis = true; const io = new IntersectionObserver(([e]) => { vis = e.isIntersecting; }); io.observe(el);
+    let raf, last = 0; const t0 = performance.now();
+    const loop = () => { raf = requestAnimationFrame(loop); if(!vis) return; const now = performance.now(); U.uTime.value = (now - t0) / 1000; r.render(scene, cam); };
+    loop();
+    if(FX) gsap.from(r.domElement, { opacity: 0, duration: 1.6, ease: 'power2.out' });
+    return () => { cancelAnimationFrame(raf); ro.disconnect(); io.disconnect(); window.removeEventListener('palette', repaint); mat.dispose(); r.dispose(); el.removeChild(r.domElement); };
+  }, []);
+  return html`<div className="aurora" ref=${host} aria-hidden="true"></div>`;
+}
+
+/* floating background particles: teeth, bubbles, sparkles (drift + scroll + mouse parallax) */
+const BG_ICONS = [
+  html`<svg viewBox="0 0 24 24"><path d=${TOOTH} style=${{ fill: 'none', stroke: 'var(--aqua-deep)', strokeWidth: 1.3, strokeLinejoin: 'round' }}/></svg>`,
+  html`<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" style=${{ fill: 'none', stroke: 'var(--aqua-deep)', strokeWidth: 1.2 }}/><circle cx="9" cy="8.5" r="2.2" fill="#fff" opacity=".8"/></svg>`,
+  html`<svg viewBox="0 0 24 24"><path d="M12 0c.8 6.6 5.4 11.2 12 12-6.6.8-11.2 5.4-12 12-.8-6.6-5.4-11.2-12-12C6.6 11.2 11.2 6.6 12 0z" style=${{ fill: 'var(--coral)' }}/></svg>`,
+  html`<svg viewBox="0 0 24 24"><path d=${TOOTH} style=${{ fill: 'var(--aqua)' }}/></svg>`,
+  html`<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" style=${{ fill: 'none', stroke: 'var(--aqua-deep)', strokeWidth: 2, strokeLinecap: 'round' }}/></svg>`
+];
+function BgParticles(){
+  const ref = useRef();
+  const n = isMobile ? 5 : 14;
+  const parts = useRef(Array.from({ length: n }, (_, i) => ({
+    x: (i * 37 + 11) % 100, y: (i * 53 + 7) % 100, s: 18 + ((i * 29) % 46), ic: i % BG_ICONS.length, d: .3 + ((i * 17) % 10) / 10, o: .35 + ((i * 13) % 5) / 10
+  })));
+  useEffect(() => {
+    if(!FX) return;
+    const els = ref.current.querySelectorAll('.bg-p');
+    const tws = [];
+    els.forEach((el, i) => {
+      const inner = el.firstElementChild; const p = parts.current[i];
+      tws.push(gsap.to(inner, { x: () => gsap.utils.random(-140, 140), y: () => gsap.utils.random(-160, 160), rotation: () => gsap.utils.random(-60, 60), scale: () => gsap.utils.random(.8, 1.3), duration: () => gsap.utils.random(7, 14), repeat: -1, repeatRefresh: true, yoyo: true, ease: 'sine.inOut', delay: -i }));
+      gsap.fromTo(inner, { opacity: 0 }, { opacity: p.o, duration: 2, delay: i * .08 });
+      if(window.ScrollTrigger && !isMobile) tws.push(gsap.to(el, { y: () => -p.d * window.innerHeight * 1.2, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: .8 } }));
+    });
+    let mm;
+    if(finePointer){
+      const setters = [...els].map(el => ({ x: gsap.quickTo(el, 'x', { duration: 1.2, ease: 'power3' }), d: parts.current[[...els].indexOf(el)].d }));
+      mm = e => { const nx = e.clientX / innerWidth - .5, ny = e.clientY / innerHeight - .5; setters.forEach(s => s.x(nx * -80 * s.d)); };
+      window.addEventListener('pointermove', mm, { passive: true });
+    }
+    return () => { tws.forEach(t => t.kill()); mm && window.removeEventListener('pointermove', mm); };
+  }, []);
+  return html`<div className="bg-parts" ref=${ref}>${parts.current.map((p, i) => html`<div key=${i} className="bg-p" style=${{ left: p.x + '%', top: p.y + '%', width: p.s + 'px', height: p.s + 'px' }}><span style=${{ opacity: FX ? 0 : p.o }}>${BG_ICONS[p.ic]}</span></div>`)}</div>`;
+}
+
+/* click sparks (React Bits "Click Spark" style) */
+function useClickSpark(){
+  useEffect(() => {
+    if(!FX) return;
+    const NS = 'http://www.w3.org/2000/svg';
+    const h = e => {
+      if(e.pointerType === 'mouse' && e.button !== 0) return;
+      const s = document.createElementNS(NS, 'svg'); s.setAttribute('class', 'spark-burst'); s.setAttribute('viewBox', '-35 -35 70 70');
+      s.style.left = e.clientX + 'px'; s.style.top = e.clientY + 'px';
+      const lines = [];
+      for(let i = 0; i < 8; i++){ const l = document.createElementNS(NS, 'line'); l.setAttribute('stroke-width', '2.5'); l.setAttribute('stroke-linecap', 'round'); l.style.stroke = i % 2 ? 'var(--coral)' : 'var(--aqua-deep)'; s.appendChild(l); lines.push(l); }
+      document.body.appendChild(s);
+      gsap.fromTo(lines, { attr: { x1: 0, y1: 0, x2: 0, y2: 0 } }, { attr: { x1: i => Math.cos(i * Math.PI / 4) * 8, y1: i => Math.sin(i * Math.PI / 4) * 8, x2: i => Math.cos(i * Math.PI / 4) * 26, y2: i => Math.sin(i * Math.PI / 4) * 26 }, opacity: 0, duration: .55, ease: 'power2.out', onComplete: () => s.remove() });
+    };
+    window.addEventListener('pointerdown', h, { passive: true });
+    return () => window.removeEventListener('pointerdown', h);
+  }, []);
+}
+
+/* =================== services marquee =================== */
+function Marquee(){
+  const ref = useRef();
+  const items = ['تبييض', 'تقويم شفاف', 'زراعة', 'علاج عصب', 'حشوات تجميلية', 'فينير', 'تنظيف', 'أسنان أطفال'];
+  useEffect(() => {
+    if(!FX) return;
+    const tr = ref.current.querySelector('.mq-track'); let x = 0, w = tr.scrollWidth / 2, vel = 0, boost = 0, vis = true;
+    const measure = () => { w = tr.scrollWidth / 2; }; fontsReady.then(measure); window.addEventListener('resize', measure);
+    const io = new IntersectionObserver(([e]) => { vis = e.isIntersecting; }); io.observe(ref.current);
+    let st; if(window.ScrollTrigger) st = ScrollTrigger.create({ onUpdate: s => { vel = s.getVelocity(); } });
+    const tick = (t, dt) => {
+      if(!vis) return;
+      boost += (vel / 1000 - boost) * .1; vel *= .9;
+      x -= (1.2 + Math.abs(boost) * 6) * (boost < -.05 ? -1 : 1) * dt * .06;
+      x = gsap.utils.wrap(-w, 0, x);
+      gsap.set(tr, isMobile ? { x, force3D: true } : { x, skewX: gsap.utils.clamp(-12, 12, -boost * 4), force3D: true });
+    };
+    gsap.ticker.add(tick);
+    return () => { gsap.ticker.remove(tick); io.disconnect(); st && st.kill(); window.removeEventListener('resize', measure); };
+  }, []);
+  const seq = [...items, ...items];
+  const half = seq.map((t, i) => html`<${React.Fragment} key=${i}><span className="mq-item">${t}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d=${TOOTH} fill="currentColor"/></svg></${React.Fragment}>`);
+  return html`<div className="marquee" ref=${ref} aria-hidden="true"><div className="mq-row" dir="ltr"><div className="mq-track" dir="rtl">${half}${half}</div></div></div>`;
+}
+
+/* =================== treatment simulator =================== */
+const TREAT = {
+  filling: { t: 'حشوة تجميلية', steps: [
+    { t: 'التشخيص', d: 'الطبيب بيفحص السن وبيحدد مكان التسوّس وحجمه، وأحياناً بصورة أشعة صغيرة.' },
+    { t: 'التخدير الموضعي', d: 'تخدير بسيط للمنطقة عشان ما تحس بإشي طول الجلسة.' },
+    { t: 'إزالة التسوّس', d: 'بنشيل الجزء الخربان بس، ونحافظ على أكبر جزء سليم من السن.' },
+    { t: 'التنظيف والتحضير', d: 'بنعقّم المكان وبنجهّزه عشان الحشوة تلزق منيح.' },
+    { t: 'وضع الحشوة', d: 'مادة بلون سنّك بتنحط طبقة طبقة وبتتشكّل زي السن الأصلي.' },
+    { t: 'التصليب بالضوء', d: 'ضوء أزرق خاص بيصلّب كل طبقة خلال ثواني.' },
+    { t: 'التلميع', d: 'تعديل العضة وتلميع، وبتطلع والسن زي الجديد.' }
+  ] },
+  rootcanal: { t: 'علاج العصب', steps: [
+    { t: 'التشخيص بالأشعة', d: 'الأشعة بتوضّح إنه التسوّس وصل اللب والعصب ملتهب، وهاد سبب الألم القوي.' },
+    { t: 'التخدير الموضعي', d: 'بنخدّر المنطقة منيح قبل ما نبلّش، فالعلاج نفسه ما بيوجع.' },
+    { t: 'فتح السن', d: 'فتحة صغيرة من فوق بتوصلنا للب.' },
+    { t: 'تنظيف القنوات', d: 'أدوات دقيقة بتشيل العصب الملتهب وبتنظّف القنوات لآخرها.' },
+    { t: 'حشو القنوات', d: 'بنعبي القنوات بمادة خاصة وبنسكّرها منيح عشان ما يرجع الالتهاب.' },
+    { t: 'التلبيسة', d: 'بنرجّع شكل السن وبنحميه بحشوة أو تلبيسة، وبيرجع يشتغل طبيعي.' }
+  ] },
+  implant: { t: 'زراعة سن', steps: [
+    { t: 'مكان السن المفقود', d: 'لما يروح سن، العظم تحته بيبلّش يضعف مع الوقت، والأسنان اللي جنبه بتميل.' },
+    { t: 'تثبيت الزرعة', d: 'برغي تيتانيوم صغير بينزرع بالعظم مكان الجذر، تحت تخدير موضعي.' },
+    { t: 'الالتحام', d: 'خلال كم شهر العظم بيلتحم حوالين الزرعة وبتصير ثابتة زي الجذر الطبيعي.' },
+    { t: 'الدعامة', d: 'قطعة صغيرة بتنركّب على الزرعة عشان تحمل السن.' },
+    { t: 'التاج', d: 'تاج بلون وشكل أسنانك بيتركّب، وبتاكل وبتضحك فيه عادي.' }
+  ] },
+  whitening: { t: 'تبييض الأسنان', steps: [
+    { t: 'قبل التبييض', d: 'التصبّغات من القهوة والشاي والدخان بتغمّق لون الأسنان مع الوقت.' },
+    { t: 'حماية اللثة', d: 'بنحط طبقة حماية على اللثة قبل ما نبلّش.' },
+    { t: 'وضع جل التبييض', d: 'جل خاص بينحط على سطح الأسنان بس.' },
+    { t: 'تفعيل بالضوء', d: 'ضوء بيسرّع مفعول الجل على كم جولة قصيرة.' },
+    { t: 'النتيجة', d: 'أسنان أفتح بشكل واضح من نفس الجلسة.' }
+  ] },
+  ortho: { t: 'تقويم الأسنان', steps: [
+    { t: 'قبل التقويم', d: 'أسنان مزاحمة أو مايلة بتصعّب التنظيف وبتأثر على العضة.' },
+    { t: 'تركيب الحاصرات', d: 'قطع صغيرة بتنلزق على كل سن، بدون أي ألم.' },
+    { t: 'تركيب السلك', d: 'سلك مرن بيربط الحاصرات وبيسحب الأسنان بلطف.' },
+    { t: 'حركة الأسنان', d: 'مع المراجعات الدورية، الأسنان بتتحرك شوي شوي لمكانها، غالباً خلال سنة لسنتين.' },
+    { t: 'النتيجة والمثبّت', d: 'بنفك التقويم، وبتلبس مثبّت عشان تضل الأسنان بمكانها.' }
+  ] }
+};
+const TOOTH_TREATS = ['filling', 'rootcanal', 'implant'];
+const TNAME = ['القاطع الأمامي', 'القاطع الجانبي', 'الناب', 'الضاحك الأول', 'الضاحك الثاني'];
+const OPT_ICON = {
+  filling: html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d=${TOOTH}/><circle cx="14" cy="8" r="1.8" fill="currentColor"/></svg>`,
+  rootcanal: html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d=${TOOTH}/><path d="M17 2l-2 3h3l-2 3"/></svg>`,
+  implant: html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M7 4c0-1.5 2-2 5-2s5 .5 5 2c0 2-1 3-5 3S7 6 7 4z"/><path d="M10 9h4M9.5 12h5M10 15h4M10.5 18h3M11 21h2"/></svg>`,
+  whitening: html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d=${TOOTH}/><path d="M19 1v4M17 3h4"/></svg>`,
+  ortho: html`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="8" width="5" height="8" rx="2"/><rect x="9.5" y="8" width="5" height="8" rx="2"/><rect x="17" y="8" width="5" height="8" rx="2"/><path d="M1 12h22"/></svg>`
+};
+
+/* ---- smile used for picking a tooth ---- */
+function PickSmile({ sel, onPick, svgRef }){
+  const order = byOuter(UP_D.map((t, k) => ({ ...t, k })));
+  return html`<svg viewBox="0 0 600 300" ref=${svgRef} role="group" aria-label="اختار سن">
+    <${SmileDefs} p="p"/>
+    <path d=${MOUTH} fill="url(#p-mouth)"/>
+    <g clipPath="url(#p-mclip)">
+      <g>${byOuter(LOW_D).map((t, k) => html`<g key=${k}><path d=${t.d} fill="url(#p-white)" stroke="rgba(100,80,70,.3)" strokeWidth="1.2"/><path d=${t.d} fill="#2a1418" opacity=${depth(t.dx) + .14}/></g>`)}</g>
+      ${order.map(t => html`<g key=${t.k} className=${'pt' + (sel === t.k ? ' sel' : '')} data-k=${t.k} role="button" tabIndex="0" aria-label=${TNAME[t.i]}
+          onClick=${() => onPick(t.k)} onKeyDown=${e => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); onPick(t.k); } }}>
+        <path d=${t.d} fill="url(#p-white)" stroke="rgba(100,80,70,.3)" strokeWidth="1.2"/>
+        <path d=${t.d} fill="url(#p-edge)"/>
+        <ellipse cx=${t.cx - t.w * .17} cy=${t.y + t.hh * .52} rx=${t.w * .09} ry=${t.hh * .26} fill="url(#p-hl)"/>
+        <path d=${t.d} fill="#2a1418" opacity=${depth(t.dx)}/>
+        <path className="pt-hl" d=${t.d}/>
+      </g>`)}
+      <path d=${GUM_U} fill="url(#p-gum)" pointerEvents="none"/>
+      <path d=${GUM_L} fill="url(#p-gumL)" pointerEvents="none"/>
+    </g>
+    <g pointerEvents="none"><${Lips} p="p"/></g>
+    ${sel == null && html`<g className="taps" pointerEvents="none"><circle className="tap" cx="267" cy="150" r="14"/><circle className="tap" cx="267" cy="150" r="14"/></g>`}
+  </svg>`;
+}
+
+/* ---- close-up tooth stage (filling / root canal / implant) ---- */
+const CAV = 'M168,64 C160,78 160,98 170,112 C180,118 192,108 192,94 C192,80 186,70 182,64 Z';
+const CANAL_L = 'M130,186 C126,250 122,300 117,350', CANAL_R = 'M170,186 C174,250 178,300 183,350';
+function ToothStage({ mode, rootRef }){
+  const implant = mode === 'implant';
+  return html`<div className="xray"><span className="xray-tag">${TREAT[mode].t}</span>
+  <svg viewBox="0 0 420 400" ref=${rootRef} role="img" aria-label=${'خطوات ' + TREAT[mode].t}>
+    <defs>
+      <clipPath id="ts-crown"><rect x="-120" y="0" width="440" height="205"/></clipPath>
+      <clipPath id="ts-crown2"><rect x="-120" y="0" width="440" height="212"/></clipPath>
+      <clipPath id="ts-fill"><rect id="fillclip-r" x="140" y="130" width="70" height="120"/></clipPath>
+      <clipPath id="ts-open"><rect id="openclip-r" x="120" y="40" width="80" height="0"/></clipPath>
+      <clipPath id="ts-gp"><rect id="gpclip-r" x="90" y="360" width="120" height="260"/></clipPath>
+      <linearGradient id="ts-en" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FFFFFF"/><stop offset="1" stopColor="#D6E3E0"/></linearGradient>
+      <radialGradient id="ts-de" cx=".45" cy=".3" r=".8"><stop offset="0" stopColor="#F9E9C4"/><stop offset="1" stopColor="#D2AE6C"/></radialGradient>
+      <radialGradient id="ts-pu" cx=".5" cy=".35" r=".7"><stop offset="0" stopColor="#FF9AA6"/><stop offset="1" stopColor="#C2374B"/></radialGradient>
+      <linearGradient id="ts-gu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#F3A1AB"/><stop offset="1" stopColor="#CB5F70"/></linearGradient>
+      <linearGradient id="ts-bo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#E9DACB"/><stop offset="1" stopColor="#C9B194"/></linearGradient>
+      <linearGradient id="ts-ti" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stopColor="#8E9AA8"/><stop offset=".45" stopColor="#E8EDF2"/><stop offset="1" stopColor="#7C8896"/></linearGradient>
+      <linearGradient id="ts-beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#7DB7FF" stopOpacity=".95"/><stop offset="1" stopColor="#7DB7FF" stopOpacity="0"/></linearGradient>
+    </defs>
+    <g className="tw" transform="translate(110 0)">
+      <rect x="-110" y="250" width="420" height="150" rx="22" fill="url(#ts-bo)"/>
+      <g fill="#BFA588" opacity=".55"><ellipse cx="-60" cy="300" rx="14" ry="8"/><ellipse cx="40" cy="342" rx="10" ry="6"/><ellipse cx="262" cy="310" rx="16" ry="9"/><ellipse cx="-20" cy="374" rx="12" ry="7"/></g>
+      ${implant && html`<g className="osseo" stroke="#B89B78" strokeWidth="3" fill="none">${[256, 280, 304, 328].map(y => html`<ellipse key=${y} cx="150" cy=${y} rx="34" ry="7"/>`)}</g>`}
+      ${implant && html`<g className="screw"><path d="M134,232 L166,232 L162,350 Q150,374 138,350 Z" fill="url(#ts-ti)" stroke="#5E6A78" strokeWidth="1.5"/>
+        <g className="threads" stroke="#5E6A78" strokeWidth="2">${[244, 256, 268, 280, 292, 304, 316, 328, 340].map(y => html`<line key=${y} x1="136" y1=${y} x2="164" y2=${y - 6}/>`)}</g></g>`}
+      <g className="nat">
+        <path d=${TOOTH_D} fill="url(#ts-de)" stroke="#B08E52" strokeWidth="2"/>
+        <g clipPath="url(#ts-crown)"><path d=${TOOTH_D} fill="url(#ts-en)" stroke="#8FA6A0" strokeWidth="2.5"/></g>
+        <g clipPath="url(#ts-crown)"><path d=${TOOTH_D} transform="translate(150 215) scale(.84) translate(-150 -215)" fill="url(#ts-de)"/></g>
+        <path className="pulp" d=${PULP_D} fill="url(#ts-pu)"/>
+        <path className="pulp-clean" d=${PULP_D} fill="#FBE7EA" opacity="0"/>
+        <path className="canal-clean" d=${CANAL_L + ' ' + CANAL_R} stroke="#FBE7EA" strokeWidth="9" strokeLinecap="round" fill="none" opacity="0"/>
+        <g clipPath="url(#ts-gp)"><path className="gp" d=${CANAL_L + ' ' + CANAL_R} stroke="#F08A2C" strokeWidth="9" strokeLinecap="round" fill="none"/><path className="gp" d="M134,150 C134,136 142,132 150,134 C158,132 166,136 166,150 L166,186 L134,186 Z" fill="#F08A2C"/></g>
+        <g clipPath="url(#ts-open)"><path d="M138,58 L162,58 L166,140 L134,140 Z" fill="#FBE7EA"/></g>
+        <path className="hole" d=${CAV} fill="#F6D7DC" stroke="#C9A3AA" strokeWidth="1.5"/>
+        <g clipPath="url(#ts-fill)"><path className="fillm" d=${CAV} fill="#F7F3E8" stroke="#CFC6B0" strokeWidth="1.5"/></g>
+        <g className="dec"><path d=${CAV} fill="#B98A55"/><path d="M170,64 C165,76 166,92 173,102 C180,106 188,98 187,88 C186,78 182,70 180,64 Z" fill="#4E3320"/></g>
+        <g className="dec2"><path d="M164,62 C150,84 148,120 156,146 C166,160 186,148 192,124 C196,100 192,76 186,62 Z" fill="#B98A55"/><path d="M168,62 C158,84 158,116 163,138 C170,148 182,140 186,120 C190,98 186,76 182,62 Z" fill="#4E3320"/></g>
+        <g className="inflame" fill="none" stroke="#FF4D63" strokeWidth="3"><circle cx="150" cy="160" r="26"/><circle cx="150" cy="160" r="26"/></g>
+        <g className="files" stroke="#AEB8C4" strokeWidth="3" strokeLinecap="round"><line x1="132" y1="100" x2="128" y2="230"/><line x1="168" y1="100" x2="172" y2="230"/><rect x="126" y="86" width="12" height="16" rx="3" fill="#FFB547" stroke="none"/><rect x="162" y="86" width="12" height="16" rx="3" fill="#2EC4B6" stroke="none"/></g>
+      </g>
+      <g className="cap" clipPath="url(#ts-crown2)"><path d=${TOOTH_D} fill="#FDFDFB" stroke="#B9C4C2" strokeWidth="2.5" transform="translate(150 140) scale(1.03) translate(-150 -140)"/></g>
+      <path d="M-110,214 C0,206 60,198 86,210 C90,226 92,244 94,264 L-110,264 Z" fill="url(#ts-gu)"/>
+      <path d="M410,214 C300,206 240,198 214,210 C210,226 208,244 206,264 L410,264 Z" fill="url(#ts-gu)"/>
+      ${implant && html`<path className="gapgum" d="M84,214 C110,204 190,204 216,214 L216,262 L84,262 Z" fill="url(#ts-gu)"/>`}
+      ${implant && html`<path className="abut" d="M138,204 L162,204 L166,234 L134,234 Z" fill="url(#ts-ti)" stroke="#5E6A78" strokeWidth="1.5"/>`}
+      ${implant && html`<g className="crown" clipPath="url(#ts-crown)"><path d=${TOOTH_D} fill="url(#ts-en)" stroke="#8FA6A0" strokeWidth="2.5"/></g>`}
+      <g className="numb" fill="none" stroke="#7DB7FF" strokeWidth="3"><circle cx="40" cy="232" r="18"/><circle cx="40" cy="232" r="18"/><circle cx="40" cy="232" r="18"/></g>
+      <g className="syr"><g transform="translate(40 232) rotate(-38)"><line x1="0" y1="0" x2="0" y2="-34" stroke="#C9D2DA" strokeWidth="2.5"/><rect x="-11" y="-112" width="22" height="80" rx="6" fill="#EEF4FF" stroke="#8FA0B5" strokeWidth="2"/><rect x="-7" y="-80" width="14" height="44" rx="3" fill="#7DB7FF" opacity=".55"/><rect x="-4" y="-150" width="8" height="40" rx="3" fill="#8FA0B5"/><rect x="-14" y="-156" width="28" height="8" rx="3" fill="#8FA0B5"/></g></g>
+      <g className="drill"><g transform="translate(178 62) rotate(32)">
+        <rect x="-12" y="-185" width="24" height="135" rx="12" fill="#E9EEF3" stroke="#8D99A6" strokeWidth="2"/>
+        <rect x="-17" y="-56" width="34" height="28" rx="9" fill="#F7F9FB" stroke="#8D99A6" strokeWidth="2"/>
+        <rect x="-3.5" y="-30" width="7" height="30" rx="2" fill="#B9C2CC"/>
+        <line className="bur" x1="0" y1="-30" x2="0" y2="0" stroke="#5E6A78" strokeWidth="7" strokeDasharray="2 3"/>
+      </g></g>
+      <g className="chips" fill="#6B4A2B">${[0, 1, 2, 3, 4, 5, 6].map(i => html`<circle key=${i} cx="178" cy="70" r=${2 + (i % 3)}/>`)}</g>
+      <g className="drops" fill="#9CD3FF">${[0, 1, 2, 3, 4].map(i => html`<ellipse key=${i} cx=${160 + i * 9} cy="40" rx="3" ry="5"/>`)}</g>
+      <g className="lamp"><g transform="translate(180 30) rotate(28)">
+        <rect x="-10" y="-160" width="20" height="130" rx="10" fill="#33415A"/>
+        <rect x="-14" y="-34" width="28" height="34" rx="8" fill="#4B5D7D"/>
+      </g><polygon className="beam" points="176,32 190,30 214,108 150,112" fill="url(#ts-beam)"/></g>
+      <g className="spk" fill="#FFD43B">${[[210, 50], [96, 70], [240, 120], [70, 140]].map(([x, y], i) => html`<path key=${i} d=${`M${x},${y - 14} C${x + 1},${y - 5} ${x + 5},${y - 1} ${x + 14},${y} C${x + 5},${y + 1} ${x + 1},${y + 5} ${x},${y + 14} C${x - 1},${y + 5} ${x - 5},${y + 1} ${x - 14},${y} C${x - 5},${y - 1} ${x - 1},${y - 5} ${x},${y - 14} Z`}/>`)}</g>
+      <rect className="scan" x="-110" y="0" width="420" height="10" fill="#7DB7FF" opacity="0"/>
+      ${implant && html`<text className="months stage-t" x="150" y="392" textAnchor="middle"></text>`}
+    </g>
+  </svg></div>`;
+}
+
+/* ---- front smile stage (whitening / braces) ---- */
+const CROOK = [[5, 3, 3], [-6, -4, -2], [4, 7, 4], [-9, -2, -5], [9, 5, 6], [-6, 8, -6], [11, -6, 3], [-5, 4, -4], [6, -3, 2], [-4, 5, -3]];
+const GUM_EDGE = (() => { const ts = [...UPPER].sort((a, b) => a.dx - b.dx); let d = ''; ts.forEach((t, j) => { const l = 300 + t.dx - t.w / 2 - 1, r = 300 + t.dx + t.w / 2 + 1; const Pl = zenU(t.dx - t.w / 2) + 15, Pr = zenU(t.dx + t.w / 2) + 15; const Z = zenU(t.dx) - 3; const C = 2 * Z - (Pl + Pr) / 2; d += (j ? ` L${l},${Pl}` : `M${l},${Pl}`) + ` Q${300 + t.dx},${C} ${r},${Pr}`; }); return d; })();
+function applyOrtho(root, k){
+  const pts = [];
+  root.querySelectorAll('.ot').forEach(g => {
+    const i = +g.dataset.k; const t = UP_D[i]; const [r, dy, dx] = CROOK[i]; const f = 1 - k;
+    const cx = t.cx, cy = t.y + t.hh / 2;
+    g.setAttribute('transform', `translate(${(dx * f).toFixed(2)} ${(dy * f).toFixed(2)}) rotate(${(r * f).toFixed(2)} ${cx} ${cy})`);
+    const bx = t.cx, by = t.y + t.hh * .58, a = r * f * Math.PI / 180;
+    pts.push([cx + (bx - cx) * Math.cos(a) - (by - cy) * Math.sin(a) + dx * f, cy + (bx - cx) * Math.sin(a) + (by - cy) * Math.cos(a) + dy * f]);
+  });
+  pts.sort((p, q) => p[0] - q[0]);
+  const w = root.querySelector('.wire'); if(w) w.setAttribute('d', 'M' + pts.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' L'));
+}
+function SmileStage({ mode, rootRef }){
+  const ortho = mode === 'ortho';
+  return html`<svg viewBox="0 0 600 320" ref=${rootRef} role="img" aria-label=${'خطوات ' + TREAT[mode].t}>
+    <${SmileDefs} p="s"/>
+    <defs>
+      <clipPath id="s-gel"><rect id="gelclip-r" x="0" y="0" width="0" height="320"/></clipPath>
+      <linearGradient id="s-beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#7DB7FF" stopOpacity=".85"/><stop offset="1" stopColor="#7DB7FF" stopOpacity="0"/></linearGradient>
+    </defs>
+    <path d=${MOUTH} fill="url(#s-mouth)"/>
+    <g clipPath="url(#s-mclip)">
+      ${ortho ? html`<g className="ot-wrap">
+          <g>${byOuter(LOW_D).map((t, k) => html`<g key=${k}><path d=${t.d} fill="url(#s-white)" stroke="rgba(100,80,70,.3)" strokeWidth="1.2"/><path d=${t.d} fill="#2a1418" opacity=${depth(t.dx) + .14}/></g>`)}</g>
+          ${byOuter(UP_D.map((t, k) => ({ ...t, k }))).map(t => html`<g key=${t.k} className="ot" data-k=${t.k}>
+            <path d=${t.d} fill="url(#s-white)" stroke="rgba(100,80,70,.3)" strokeWidth="1.2"/>
+            <path d=${t.d} fill="url(#s-edge)"/>
+            <ellipse cx=${t.cx - t.w * .17} cy=${t.y + t.hh * .52} rx=${t.w * .09} ry=${t.hh * .26} fill="url(#s-hl)"/>
+            <path d=${t.d} fill="#2a1418" opacity=${depth(t.dx)}/>
+            <g className="br"><rect x=${t.cx - 10} y=${t.y + t.hh * .58 - 9} width="20" height="18" rx="4" fill="#D5DDE5" stroke="#7D8A96" strokeWidth="1.5"/><line x1=${t.cx - 10} x2=${t.cx + 10} y1=${t.y + t.hh * .58} y2=${t.y + t.hh * .58} stroke="#7D8A96" strokeWidth="1.5"/></g>
+          </g>`)}
+        </g>` : html`<g>
+          <g className="w-before"><${Teeth} p="s" kind="before"/></g>
+          <g className="w-after" style=${{ opacity: 0 }}><${Teeth} p="s" kind="after"/></g>
+          <g clipPath="url(#s-tclip)"><g clipPath="url(#s-gel)"><rect className="gel" x="0" y="0" width="600" height="320" fill="#8EC9FF" opacity=".42"/></g>
+            <rect className="shine" x="-200" y="40" width="90" height="220" fill="url(#s-shine)" transform="skewX(-16)"/></g>
+        </g>`}
+      <path d=${GUM_U} fill="url(#s-gum)"/>
+      <path d=${GUM_L} fill="url(#s-gumL)"/>
+      ${!ortho && html`<path className="barrier" d=${GUM_EDGE} pathLength="1" fill="none" stroke="#5BA8F0" strokeWidth="11" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1" strokeDashoffset="1"/>`}
+      ${ortho && html`<path className="wire" pathLength="1" fill="none" stroke="#9AA6B2" strokeWidth="3" strokeLinejoin="round" strokeDasharray="1" strokeDashoffset="1"/>`}
+    </g>
+    <${Lips} p="s"/>
+    ${!ortho && html`<g className="lightbar"><rect x="180" y="-70" width="240" height="34" rx="17" fill="#33415A"/><rect x="196" y="-44" width="208" height="10" rx="5" fill="#9CD3FF"/><polygon className="beam" points="200,-36 400,-36 520,160 80,160" fill="url(#s-beam)" opacity="0"/></g>`}
+    <g className="spk" fill="#FFD43B">${[[90, 70], [520, 80], [470, 230], [130, 230], [300, 300]].map(([x, y], i) => html`<path key=${i} d=${`M${x},${y - 16} C${x + 1},${y - 6} ${x + 6},${y - 1} ${x + 16},${y} C${x + 6},${y + 1} ${x + 1},${y + 6} ${x},${y + 16} C${x - 1},${y + 6} ${x - 6},${y + 1} ${x - 16},${y} C${x - 6},${y - 1} ${x - 1},${y - 6} ${x},${y - 16} Z`}/>`)}</g>
+    ${ortho && html`<text className="months stage-t" x="300" y="314" textAnchor="middle" style=${{ fill: 'var(--ink)' }}></text>`}
+  </svg>`;
+}
+
+/* ---- timelines for each treatment ---- */
+function sparkle(tl, q, at){ tl.fromTo(q('.spk path'), { scale: 0, rotation: -90, autoAlpha: 1, transformOrigin: '50% 50%' }, { scale: 1, rotation: 0, duration: .7, stagger: .1, ease: 'back.out(3)' }, at); }
+function numbIn(tl, q){
+  tl.to(q('.syr'), { autoAlpha: 1, x: 0, y: 0, duration: .8, ease: 'power3.out' })
+    .fromTo(q('.numb circle'), { autoAlpha: 1, scale: .2, transformOrigin: '50% 50%' }, { scale: 2.6, autoAlpha: 0, duration: 1.1, stagger: .28, ease: 'power1.out' })
+    .to(q('.syr'), { x: -120, y: 60, autoAlpha: 0, duration: .6, ease: 'power3.in' });
+}
+function drillIn(tl, q, len){
+  tl.to(q('.drill'), { autoAlpha: 1, x: 0, y: 0, duration: .8, ease: 'power3.out' })
+    .to(q('.bur'), { strokeDashoffset: -60, duration: len, ease: 'none' })
+    .to(q('.drill'), { x: '+=3', y: '+=2', duration: .07, repeat: Math.round(len / .14), yoyo: true, ease: 'none' }, '<');
+}
+const BUILD = {
+  filling(root){
+    const q = s => root.querySelectorAll(s);
+    gsap.set(q('.drill,.syr,.lamp,.hole,.fillm,.spk path,.drops ellipse,.chips circle,.numb circle,.dec2,.inflame,.files,.cap,.pulp-clean,.canal-clean,.gp'), { autoAlpha: 0 });
+    gsap.set(q('.drill'), { x: 180, y: -180 }); gsap.set(q('.syr'), { x: -120, y: 60 }); gsap.set(q('.lamp'), { x: 160, y: -160 });
+    const tl = gsap.timeline({ paused: true });
+    tl.addLabel('s0')
+      .fromTo(q('.scan'), { autoAlpha: .7, attr: { y: -20 } }, { attr: { y: 260 }, duration: 1.3, ease: 'power1.inOut' })
+      .to(q('.scan'), { autoAlpha: 0, duration: .2 })
+      .fromTo(q('.dec'), { scale: 1 }, { scale: 1.18, transformOrigin: '50% 50%', duration: .28, yoyo: true, repeat: 3 }, '-=.3');
+    tl.addLabel('s1'); numbIn(tl, q);
+    tl.addLabel('s2').set(q('.hole'), { autoAlpha: 1 });
+    drillIn(tl, q, 1.8);
+    tl.fromTo(q('.chips circle'), { autoAlpha: 1, x: 0, y: 0 }, { x: i => 50 * Math.cos(i * 1.3), y: i => -40 - 25 * Math.abs(Math.sin(i)), autoAlpha: 0, duration: .9, stagger: .15 }, '<')
+      .to(q('.dec'), { scale: 0, transformOrigin: '50% 0%', duration: 1.6, ease: 'power2.in' }, '<')
+      .to(q('.drill'), { x: 180, y: -180, autoAlpha: 0, duration: .6, ease: 'power3.in' });
+    tl.addLabel('s3')
+      .fromTo(q('.drops ellipse'), { autoAlpha: 1, y: -40 }, { y: 40, autoAlpha: 0, duration: .6, stagger: .08, repeat: 2 })
+      .fromTo(q('.hole'), { attr: { fill: '#E7B9C0' } }, { attr: { fill: '#FFF3F5' }, duration: .8 }, '<.3');
+    tl.addLabel('s4').set(q('.fillm'), { autoAlpha: 1 })
+      .fromTo(root.querySelector('#fillclip-r'), { attr: { y: 130 } }, { attr: { y: 54 }, duration: 1.8, ease: 'steps(4)' });
+    tl.addLabel('s5')
+      .to(q('.lamp'), { autoAlpha: 1, x: 0, y: 0, duration: .7, ease: 'power3.out' })
+      .fromTo(q('.beam'), { autoAlpha: 0 }, { autoAlpha: .95, duration: .22, yoyo: true, repeat: 7 })
+      .to(q('.lamp'), { x: 160, y: -160, autoAlpha: 0, duration: .5, ease: 'power3.in' });
+    tl.addLabel('s6').to(q('.hole'), { autoAlpha: 0, duration: .2 });
+    sparkle(tl, q, '<');
+    tl.to(q('.tw'), { rotation: 2, svgOrigin: '260 200', duration: .12, yoyo: true, repeat: 3 }, '<');
+    tl.addLabel('end');
+    return tl;
+  },
+  rootcanal(root){
+    const q = s => root.querySelectorAll(s);
+    gsap.set(q('.drill,.syr,.lamp,.hole,.fillm,.spk path,.drops ellipse,.chips circle,.numb circle,.dec,.files,.cap,.pulp-clean,.canal-clean'), { autoAlpha: 0 });
+    gsap.set(q('.drill'), { x: 180, y: -180 }); gsap.set(q('.syr'), { x: -120, y: 60 });
+    gsap.set(q('.inflame circle'), { autoAlpha: 0 });
+    const tl = gsap.timeline({ paused: true });
+    tl.addLabel('s0')
+      .fromTo(q('.scan'), { autoAlpha: .7, attr: { y: -20 } }, { attr: { y: 380 }, duration: 1.4, ease: 'power1.inOut' })
+      .to(q('.scan'), { autoAlpha: 0, duration: .2 })
+      .fromTo(q('.inflame circle'), { autoAlpha: 1, scale: .5, transformOrigin: '50% 50%' }, { scale: 2.6, autoAlpha: 0, duration: 1.1, stagger: .5, repeat: 2 }, '-=.2')
+      .to(q('.pulp'), { attr: { fill: '#E2384F' }, duration: .3, yoyo: true, repeat: 3 }, '<');
+    tl.addLabel('s1'); numbIn(tl, q);
+    tl.addLabel('s2');
+    drillIn(tl, q, 1.6);
+    tl.to(root.querySelector('#openclip-r'), { attr: { height: 100 }, duration: 1.6, ease: 'power1.in' }, '<')
+      .to(q('.dec2'), { scale: 0, transformOrigin: '30% 0%', duration: 1.4, ease: 'power2.in' }, '<')
+      .to(q('.drill'), { x: 180, y: -180, autoAlpha: 0, duration: .6, ease: 'power3.in' });
+    tl.addLabel('s3')
+      .to(q('.files'), { autoAlpha: 1, duration: .3 })
+      .fromTo(q('.files line'), { attr: { y2: 150 } }, { attr: { y2: 330 }, duration: .45, yoyo: true, repeat: 5, ease: 'sine.inOut' })
+      .to(q('.pulp-clean'), { opacity: 1, duration: 1.8 }, '<')
+      .to(q('.canal-clean'), { opacity: 1, duration: 1.8 }, '<')
+      .to(q('.files'), { autoAlpha: 0, y: -40, duration: .4 });
+    tl.addLabel('s4')
+      .fromTo(root.querySelector('#gpclip-r'), { attr: { y: 360 } }, { attr: { y: 120 }, duration: 2, ease: 'power2.inOut' });
+    tl.addLabel('s5')
+      .fromTo(q('.cap'), { autoAlpha: 1, y: -220 }, { y: 0, duration: 1, ease: 'bounce.out' });
+    sparkle(tl, q, '-=.2');
+    tl.addLabel('end');
+    return tl;
+  },
+  implant(root){
+    const q = s => root.querySelectorAll(s);
+    gsap.set(q('.drill,.syr,.lamp,.hole,.fillm,.spk path,.drops ellipse,.chips circle,.numb circle,.dec,.dec2,.inflame,.files,.cap,.pulp-clean,.canal-clean,.gp'), { autoAlpha: 0 });
+    gsap.set(q('.gapgum,.abut,.crown'), { autoAlpha: 0 }); gsap.set(q('.screw'), { y: -300, autoAlpha: 0 });
+    gsap.set(q('.osseo ellipse'), { scale: 0, autoAlpha: 0, transformOrigin: '50% 50%' });
+    const m = root.querySelector('.months'); const mo = { v: 0 };
+    const tl = gsap.timeline({ paused: true });
+    tl.addLabel('s0')
+      .fromTo(q('.nat'), { autoAlpha: 1, y: 0 }, { y: -90, autoAlpha: 0, duration: 1.1, ease: 'power3.in' })
+      .fromTo(q('.gapgum'), { autoAlpha: 0, scaleY: .3, transformOrigin: '50% 100%' }, { autoAlpha: 1, scaleY: 1, duration: .8, ease: 'back.out(2)' });
+    tl.addLabel('s1')
+      .to(q('.screw'), { autoAlpha: 1, duration: .2 })
+      .to(q('.screw'), { y: 0, duration: 2, ease: 'power2.out' }, '<')
+      .fromTo(q('.threads'), { y: 0 }, { y: 12, duration: .25, repeat: 7, ease: 'none' }, '<');
+    tl.addLabel('s2')
+      .to(q('.osseo ellipse'), { scale: 1, autoAlpha: 1, duration: .8, stagger: .25, ease: 'back.out(2)' })
+      .fromTo(mo, { v: 0 }, { v: 3, duration: 2, ease: 'none', onUpdate: () => { m.textContent = 'بعد ' + Math.round(mo.v) + ' شهور'; } }, '<');
+    tl.addLabel('s3')
+      .fromTo(q('.abut'), { autoAlpha: 1, y: -160 }, { y: 0, duration: .8, ease: 'bounce.out' });
+    tl.addLabel('s4')
+      .fromTo(q('.crown'), { autoAlpha: 1, y: -240 }, { y: 0, duration: 1, ease: 'bounce.out' })
+      .add(() => { m.textContent = ''; });
+    sparkle(tl, q, '-=.3');
+    tl.addLabel('end');
+    return tl;
+  },
+  whitening(root){
+    const q = s => root.querySelectorAll(s);
+    gsap.set(q('.spk path'), { autoAlpha: 0 }); gsap.set(q('.lightbar'), { y: -60 });
+    const tl = gsap.timeline({ paused: true });
+    tl.addLabel('s0')
+      .fromTo(q('.w-before .tu'), { scale: 1 }, { scale: 1.05, transformOrigin: '50% 0%', duration: .3, stagger: { each: .05, from: 'center' }, yoyo: true, repeat: 1 });
+    tl.addLabel('s1')
+      .fromTo(q('.barrier'), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.6, ease: 'power2.inOut' });
+    tl.addLabel('s2')
+      .fromTo(root.querySelector('#gelclip-r'), { attr: { width: 0 } }, { attr: { width: 600 }, duration: 1.6, ease: 'power2.inOut' });
+    tl.addLabel('s3')
+      .to(q('.lightbar'), { y: 70, duration: .8, ease: 'back.out(1.6)' })
+      .fromTo(q('.lightbar .beam'), { opacity: 0 }, { opacity: .9, duration: .3, yoyo: true, repeat: 7 })
+      .fromTo(q('.w-after'), { opacity: 0 }, { opacity: .7, duration: 2.4, ease: 'none' }, '<')
+      .to(q('.lightbar'), { y: -60, duration: .6, ease: 'power3.in' });
+    tl.addLabel('s4')
+      .to(q('.gel'), { opacity: 0, duration: .5 })
+      .to(q('.barrier'), { opacity: 0, duration: .5 }, '<')
+      .to(q('.w-after'), { opacity: 1, duration: .6 }, '<')
+      .fromTo(q('.shine'), { attr: { x: -200 } }, { attr: { x: 700 }, duration: 1, ease: 'power2.inOut' });
+    sparkle(tl, q, '<.3');
+    tl.addLabel('end');
+    return tl;
+  },
+  ortho(root){
+    const q = s => root.querySelectorAll(s);
+    const o = { k: 0 }; const m = root.querySelector('.months');
+    applyOrtho(root, 0);
+    gsap.set(q('.br'), { scale: 0, transformOrigin: '50% 50%' }); gsap.set(q('.spk path'), { autoAlpha: 0 });
+    const tl = gsap.timeline({ paused: true });
+    tl.addLabel('s0')
+      .fromTo(q('.ot-wrap'), { scale: 1 }, { scale: 1.05, svgOrigin: '300 150', duration: .35, yoyo: true, repeat: 1, ease: 'power2.inOut' });
+    tl.addLabel('s1')
+      .fromTo(q('.br'), { scale: 0 }, { scale: 1, duration: .5, stagger: { each: .09, from: 'center' }, ease: 'back.out(3)' });
+    tl.addLabel('s2')
+      .fromTo(q('.wire'), { strokeDashoffset: 1, opacity: 1 }, { strokeDashoffset: 0, duration: 1.3, ease: 'power2.inOut' });
+    tl.addLabel('s3')
+      .fromTo(o, { k: 0 }, { k: 1, duration: 3, ease: 'power1.inOut', onUpdate: () => { applyOrtho(root, o.k); m.textContent = 'الشهر ' + Math.round(o.k * 18); } });
+    tl.addLabel('s4')
+      .to(q('.br'), { scale: 0, duration: .35, stagger: { each: .06, from: 'edges' }, ease: 'back.in(2)' })
+      .to(q('.wire'), { opacity: 0, duration: .4 }, '<')
+      .add(() => { m.textContent = ''; });
+    sparkle(tl, q, '-=.1');
+    tl.addLabel('end');
+    return tl;
+  }
+};
+
+function Simulator(){
+  const [phase, setPhase] = useState('pick');   // pick | play
+  const [tooth, setTooth] = useState(null);
+  const [treat, setTreat] = useState(null);
+  const [step, setStep] = useState(0);
+  const [auto, setAuto] = useState(true);
+  const pickSvg = useRef(); const stage = useRef(); const tl = useRef(); const tw = useRef(); const timer = useRef();
+  const autoRef = useRef(auto); autoRef.current = auto;
+  const treatRef = useRef(treat); treatRef.current = treat;
+
+  // tap hint on the pick screen
+  useEffect(() => {
+    if(phase !== 'pick' || !FX || !pickSvg.current) return;
+    gsap.fromTo(pickSvg.current, { scale: .9, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: .8, ease: 'expo.out', clearProps: 'transform' });
+    const taps = pickSvg.current.querySelectorAll('.tap');
+    const t = taps.length ? gsap.fromTo(taps, { scale: .4, opacity: 1, transformOrigin: '50% 50%' }, { scale: 2.6, opacity: 0, duration: 1.4, stagger: .7, repeat: -1, ease: 'power1.out' }) : null;
+    return () => { t && t.kill(); };
+  }, [phase, tooth == null]);
+
+  const onPick = k => {
+    setTooth(k);
+    if(FX){
+      const g = pickSvg.current.querySelector(`.pt[data-k="${k}"]`);
+      gsap.fromTo(g, { y: 0 }, { y: -10, duration: .18, yoyo: true, repeat: 1, ease: 'power2.out' });
+      setTimeout(() => { const opts = document.querySelectorAll('.sim-panel .opt'); gsap.from(opts, { x: -40, autoAlpha: 0, duration: .6, stagger: .07, ease: 'expo.out' }); }, 0);
+    }
+  };
+
+  const playStep = i => {
+    const t = tl.current; if(!t) return;
+    clearTimeout(timer.current); tw.current && tw.current.kill();
+    const n = TREAT[treatRef.current].steps.length;
+    setStep(i);
+    const a = 's' + i, b = i + 1 < n ? 's' + (i + 1) : 'end';
+    t.pause(); t.seek(a, false);
+    if(!FX){ t.seek(b, false); return; }
+    tw.current = t.tweenFromTo(a, b, { onComplete: () => { if(autoRef.current && i + 1 < n) timer.current = setTimeout(() => playStep(i + 1), 1300); } });
+  };
+
+  const start = key => {
+    const zoomTooth = TOOTH_TREATS.includes(key) && tooth != null;
+    const go2 = () => { setTreat(key); setStep(0); setPhase('play'); };
+    if(FX && pickSvg.current){
+      const t = zoomTooth ? UP_D[tooth] : null;
+      const ox = t ? (t.cx / 600 * 100) + '%' : '50%', oy = t ? ((t.y + t.hh / 2) / 300 * 100) + '%' : '50%';
+      gsap.to(pickSvg.current, { scale: zoomTooth ? 3.4 : 1.2, autoAlpha: 0, transformOrigin: `${ox} ${oy}`, duration: .7, ease: 'power3.in', onComplete: go2 });
+    } else go2();
+  };
+
+  useEffect(() => {
+    if(phase !== 'play' || !treat) return;
+    const root = stage.current; const svg = root.tagName === 'svg' ? root : root;
+    if(FX) gsap.fromTo(root.closest('.sim-visual').firstElementChild, { scale: .55, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1, ease: 'elastic.out(1,.65)' });
+    if(!hasGsap){ return; }
+    tl.current = BUILD[treat](svg);
+    const t0 = setTimeout(() => playStep(0), FX ? 650 : 0);
+    if(FX) setTimeout(() => gsap.from(document.querySelectorAll('.steps-list li'), { x: -30, autoAlpha: 0, duration: .5, stagger: .05, ease: 'expo.out' }), 0);
+    return () => { clearTimeout(t0); clearTimeout(timer.current); tw.current && tw.current.kill(); tl.current && tl.current.kill(); tl.current = null; };
+  }, [phase, treat]);
+
+  useEffect(() => { if(!auto) clearTimeout(timer.current); }, [auto]);
+
+  const back = () => { clearTimeout(timer.current); setPhase('pick'); setTreat(null); };
+  const T = treat ? TREAT[treat] : null; const n = T ? T.steps.length : 0;
+  const toothOpts = [
+    { k: 'filling', t: 'تسوّس', s: 'العلاج: حشوة تجميلية' },
+    { k: 'rootcanal', t: 'ألم قوي بالسن', s: 'العلاج: علاج عصب' },
+    { k: 'implant', t: 'سن مكسور أو مفقود', s: 'العلاج: زراعة' }
+  ];
+  const mouthOpts = [
+    { k: 'whitening', t: 'أسنان مصفرّة', s: 'العلاج: تبييض' },
+    { k: 'ortho', t: 'أسنان مش مرتبة', s: 'العلاج: تقويم' }
+  ];
+  const Opt = o => html`<button key=${o.k} className="opt" onClick=${() => start(o.k)}><span className="opt-ic">${OPT_ICON[o.k]}</span><span><b>${o.t}</b><small>${o.s}</small></span></button>`;
+
+  return html`<section id="simulator">
+    <div className="wrap">
+      <h2 data-split>جرّب العلاج بنفسك</h2>
+      <p className="lead" data-reveal>اكبس على أي سن واختار المشكلة، وشوف خطوات العلاج قدامك خطوة بخطوة. أو اختار علاج للفم كامل.</p>
+      <div className="sim">
+        <div className="sim-visual">
+          ${phase === 'pick'
+            ? html`<${PickSmile} sel=${tooth} onPick=${onPick} svgRef=${pickSvg}/>`
+            : (TOOTH_TREATS.includes(treat) ? html`<${ToothStage} key=${treat} mode=${treat} rootRef=${stage}/>` : html`<${SmileStage} key=${treat} mode=${treat} rootRef=${stage}/>`)}
+          ${phase === 'pick' && tooth == null && html`<div className="sim-hint">اكبس على أي سن من فوق</div>`}
+        </div>
+        <div className="sim-panel" aria-live="polite">
+          ${phase === 'pick' ? html`<div>
+              <h3>${tooth == null ? 'شو بتحس فيه؟' : 'اخترت: ' + TNAME[UP_D[tooth].i]}</h3>
+              <p className="sub">${tooth == null ? 'اختار سن من الصورة، أو علاج للفم كامل من تحت.' : 'شو المشكلة بهالسن؟'}</p>
+              ${tooth != null && html`<div className="opts">${toothOpts.map(Opt)}</div>`}
+              <p className="opts-label">للفم كامل</p>
+              <div className="opts">${mouthOpts.map(Opt)}</div>
+            </div>` : html`<div>
+              <h3>${T.t}</h3>
+              <p className="sub">الخطوة ${step + 1} من ${n}</p>
+              <ol className="steps-list">${T.steps.map((s, i) => html`<li key=${i}><button className=${i === step ? 'cur' : i < step ? 'done' : ''} onClick=${() => playStep(i)}><span>${i + 1}</span><span>${s.t}</span></button></li>`)}</ol>
+              <p className="step-desc"><b>${T.steps[step].t}</b><span>${T.steps[step].d}</span></p>
+              <div className="ctrls">
+                <button className="btn" disabled=${step === 0} onClick=${() => playStep(Math.max(0, step - 1))}>السابق</button>
+                ${step + 1 < n
+                  ? html`<button className="btn primary" onClick=${() => playStep(step + 1)}>التالي</button>`
+                  : html`<button className="btn primary" onClick=${() => playStep(0)}>من البداية</button>`}
+                <label className="auto"><input type="checkbox" checked=${auto} onChange=${e => setAuto(e.target.checked)}/>تشغيل تلقائي</label>
+              </div>
+              <button className="back-link" onClick=${back}>جرّب علاج ثاني</button>
+            </div>`}
+        </div>
+      </div>
+    </div>
+  </section>`;
+}
+
+
+/* ---------- header + menu ---------- */
+function Header({ onMenu }){
+  const ref = useRef();
+  useEffect(() => {
+    const f = () => {
+      const hero = document.querySelector('.hero'); if(!ref.current || !hero) return;
+      const dark = hero.getBoundingClientRect().bottom > 80;
+      ref.current.classList.toggle('on-dark', dark);
+      document.documentElement.classList.toggle('top-dark', dark);
+    };
+    f(); window.addEventListener('scroll', f, { passive: true }); window.addEventListener('resize', f);
+    return () => { window.removeEventListener('scroll', f); window.removeEventListener('resize', f); };
+  }, []);
+  const link = (id, t) => html`<a href=${'#' + id} onClick=${e => { e.preventDefault(); go(id); }}>${t}</a>`;
+  return html`<header className="site-header on-dark" ref=${ref}>
+    <div className="wrap bar">
+      <a className="brand" href="#top" onClick=${e => { e.preventDefault(); go('top'); }}><${ToothLogo}/><span>${CLINIC.name}<small>${CLINIC.tagline}</small></span></a>
+      <nav className="nav" aria-label="أقسام الموقع">${link('simulator', 'جرّب العلاج')}${link('guide', 'صحة أسنانك')}${link('brush', 'التفريش')}${link('services', 'الخدمات')}${link('doctor', 'الطبيب')}${link('faq', 'الأسئلة')}</nav>
+      <button className="btn primary magnetic" onClick=${() => go('book')}>احجز موعد</button>
+      <${Palette}/>
+      <button className="burger" aria-label="افتح القائمة" onClick=${onMenu}><span></span><span></span><span></span></button>
+    </div>
+    <span className="progress" aria-hidden="true"></span>
+  </header>`;
+}
+
+function Menu({ open, onClose }){
+  const ref = useRef(); const tl = useRef();
+  useEffect(() => {
+    const el = ref.current;
+    if(!FX){ el.classList.toggle('open', open); return; }
+    if(open){
+      el.classList.add('open'); tl.current && tl.current.kill();
+      tl.current = gsap.timeline()
+        .fromTo(el, { clipPath: 'circle(0% at 8% 4%)' }, { clipPath: 'circle(150% at 8% 4%)', duration: .75, ease: 'power3.inOut' })
+        .from(el.querySelectorAll('nav a, .menu .btn'), { yPercent: 90, autoAlpha: 0, duration: .6, stagger: .06, ease: 'expo.out' }, '-=.35');
+    } else if(el.classList.contains('open')){
+      tl.current && tl.current.kill();
+      tl.current = gsap.to(el, { clipPath: 'circle(0% at 8% 4%)', duration: .5, ease: 'power3.inOut', onComplete: () => el.classList.remove('open') });
+    }
+  }, [open]);
+  const pick = id => { onClose(); setTimeout(() => go(id), 380); };
+  return html`<div className="menu" ref=${ref} role="dialog" aria-modal="true" aria-label="القائمة" aria-hidden=${!open}>
+    <div className="menu-top"><span className="brand"><${ToothLogo}/>${CLINIC.doctor}</span><button className="menu-close" onClick=${onClose}>إغلاق</button></div>
+    <nav>${[['simulator', 'جرّب العلاج'], ['guide', 'صحة أسنانك'], ['brush', 'التفريش الصح'], ['services', 'الخدمات'], ['doctor', 'الطبيب'], ['faq', 'الأسئلة'], ['contact', 'التواصل']].map(([id, t]) => html`<a key=${id} href=${'#' + id} onClick=${e => { e.preventDefault(); pick(id); }}>${t}</a>`)}</nav>
+    <button className="btn primary" onClick=${() => pick('book')}>احجز موعد</button>
+  </div>`;
+}
+
+/* ---------- hero ---------- */
+function Hero(){
+  const root = useRef(); const start3d = useRef(() => {});
+  useEffect(() => {
+    if(!FX) return;
+    let ctx, alive = true;
+    const texts = root.current.querySelectorAll('h1, .lead, .hero-actions, .trust');
+    gsap.set(texts, { autoAlpha: 0 });
+    fontsReady.then(() => {
+      if(!alive) return;
+      ctx = gsap.context(() => {
+        const q = gsap.utils.selector(root);
+        gsap.set(texts, { autoAlpha: 1 });
+        const words = window.SplitText ? new SplitText(q('h1')[0], { type: 'words', mask: 'words' }).words : q('h1');
+        const tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
+        tl.add(() => start3d.current(), 0)
+          .from(words, { yPercent: 125, rotate: 8, transformOrigin: 'right bottom', duration: 1.2, stagger: .07 }, .25)
+          .from(q('.lead'), { y: 28, autoAlpha: 0, duration: 1 }, .7)
+          .from(q('.hero-actions .btn'), { scale: .4, autoAlpha: 0, duration: 1, stagger: .09, ease: 'elastic.out(1,.6)' }, .85)
+          .from(q('.trust li'), { y: 16, autoAlpha: 0, duration: .7, stagger: .08 }, 1)
+          .fromTo(q('.smile-edge path'), { attr: { d: 'M0,110 L0,0 Q720,0 1440,0 L1440,110 Z' } }, { attr: { d: 'M0,110 L0,0 Q720,140 1440,0 L1440,110 Z' }, duration: 1.6, ease: 'elastic.out(1,.5)' }, .9);
+        q('.spark').forEach((s, i) => gsap.fromTo(s, { scale: 0, rotate: -45, autoAlpha: 0 }, { scale: () => .5 + Math.random() * .7, rotate: 45, autoAlpha: 1, duration: 1.1 + Math.random(), repeat: -1, yoyo: true, delay: 1 + i * .35, ease: 'sine.inOut' }));
+        if(window.ScrollTrigger) gsap.to(q('.hero-copy'), { y: -80, autoAlpha: .2, ease: 'none', scrollTrigger: { trigger: root.current, start: 'top top', end: 'bottom top', scrub: isMobile ? true : .6 } });
+      }, root);
+    });
+    return () => { alive = false; ctx && ctx.revert(); };
+  }, []);
+  const BUB = [[6, 18, 14], [14, 30, 22], [22, 10, 17], [35, 24, 26], [48, 12, 19], [58, 34, 23], [67, 16, 15], [76, 28, 21], [85, 14, 18], [93, 22, 25]];
+  return html`<section className="hero on-night" id="top" ref=${root}>
+    <${AuroraBG}/>
+    <div className="bubbles" aria-hidden="true">${BUB.map(([l, s, d], i) => html`<span key=${i} style=${{ left: l + '%', width: s + 'px', height: s + 'px', animationDuration: d + 's', animationDelay: (-i * 2.3) + 's' }}></span>`)}</div>
+    <div className="wrap hero-grid">
+      <div className="hero-copy">
+        <h1>ابتسامة صحية، بدون خوف من كرسي الدكتور.</h1>
+        <p className="lead">${CLINIC.name} ${CLINIC.tagline} في ${CLINIC.city}: فحص وتنظيف، تبييض، تقويم شفاف وزراعة، بخطة علاج واضحة وسعر بتعرفه قبل ما نبلّش.</p>
+        <div className="hero-actions">
+          <button className="btn primary magnetic" onClick=${() => go('book')}>احجز موعد</button>
+          <a className="btn magnetic" href=${callHref}><${PhoneIcon}/>اتصل بالعيادة</a>
+        </div>
+        <ul className="trust">
+          <li><${Check}/>خطة وسعر قبل ما نبلّش</li>
+          <li><${Check}/>مواعيد صباحية ومسائية</li>
+          <li><${Check}/>حجز سريع عبر واتساب</li>
+        </ul>
+      </div>
+      <${Tooth3D} startRef=${start3d}/>
+    </div>
+    <svg className="smile-edge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0,110 L0,0 Q720,140 1440,0 L1440,110 Z"/></svg>
+  </section>`;
+}
+
+/* ---------- before / after whitening ---------- */
+function Compare(){
+  const root = useRef(); const clip = useRef(); const handle = useRef(); const range = useRef(); const st = useRef({ p: 50 });
+  const setPos = p => {
+    p = Math.max(0, Math.min(100, p)); st.current.p = p; const x = p * 6;
+    clip.current && clip.current.setAttribute('width', x);
+    handle.current && handle.current.setAttribute('transform', `translate(${x} 0)`);
+    if(range.current) range.current.value = Math.round(p);
+  };
+  useEffect(() => {
+    setPos(50);
+    const el = root.current; let drag = false;
+    const toP = e => { const r = el.querySelector('svg').getBoundingClientRect(); return (e.clientX - r.left) / r.width * 100; };
+    const down = e => { drag = true; el.setPointerCapture && el.setPointerCapture(e.pointerId); if(hasGsap) gsap.killTweensOf(st.current); setPos(toP(e)); };
+    const move = e => { if(drag) setPos(toP(e)); };
+    const up = () => { drag = false; };
+    el.addEventListener('pointerdown', down); el.addEventListener('pointermove', move); el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up);
+    let tl;
+    if(FX && window.ScrollTrigger){
+      const q = gsap.utils.selector(root);
+      tl = gsap.timeline({ scrollTrigger: { trigger: el, start: 'top 70%', once: true } });
+      tl.from(q('.lips-front'), { scale: .8, transformOrigin: '50% 50%', autoAlpha: 0, duration: 1, ease: 'elastic.out(1,.55)' })
+        .from(q('.t-up .tu'), { scaleY: 0, transformOrigin: '50% 0%', duration: .7, stagger: { each: .04, from: 'center' }, ease: 'back.out(2.2)' }, .2)
+        .from(q('.t-low g'), { scaleY: 0, transformOrigin: '50% 100%', duration: .6, stagger: { each: .03, from: 'center' }, ease: 'back.out(2)' }, .3)
+        .from(q('.handle'), { autoAlpha: 0, scale: .4, transformOrigin: '50% 50%', duration: .5, ease: 'back.out(3)' }, .9)
+        .to(st.current, { p: 4, duration: 1, ease: 'power2.inOut', onUpdate: () => setPos(st.current.p) }, 1.2)
+        .to(st.current, { p: 96, duration: 1.4, ease: 'power2.inOut', onUpdate: () => setPos(st.current.p) })
+        .fromTo(q('.shine'), { attr: { x: -200 } }, { attr: { x: 700 }, duration: 1, ease: 'power2.inOut' }, '-=.35')
+        .to(st.current, { p: 50, duration: 1, ease: 'power3.inOut', onUpdate: () => setPos(st.current.p) }, '-=.5');
+    }
+    return () => { el.removeEventListener('pointerdown', down); el.removeEventListener('pointermove', move); el.removeEventListener('pointerup', up); el.removeEventListener('pointercancel', up); tl && tl.kill(); };
+  }, []);
+  return html`<section id="whitening">
+    <div className="wrap compare-grid">
+      <div className="compare-copy">
+        <h2 data-split>شوف الفرق بعد التبييض</h2>
+        <p className="lead" data-reveal>اسحب الخط على الصورة. التبييض بالعيادة بيشيل التصبّغات من القهوة والشاي والدخان، وبيرجّع لون أسنانك الطبيعي أو أفتح.</p>
+        <ul data-reveal>
+          <li><${Check}/><span>جلسة وحدة بالعيادة غالباً، حسب درجة التصبّغ.</span></li>
+          <li><${Check}/><span>بنحمي اللثة قبل ما نبلّش، والحساسية إن صارت بتكون خفيفة ومؤقتة.</span></li>
+          <li><${Check}/><span>بنعطيك نصائح تحافظ فيها على النتيجة أطول فترة.</span></li>
+        </ul>
+      </div>
+      <div className="smile" ref=${root}>
+        <svg viewBox="0 0 600 300" role="img" aria-label="رسم توضيحي لأسنان قبل وبعد التبييض">
+          <${SmileDefs} p="c"/>
+          <defs><clipPath id="c-after"><rect ref=${clip} x="0" y="0" width="300" height="300"/></clipPath></defs>
+          <path d=${MOUTH} fill="url(#c-mouth)"/>
+          <g clipPath="url(#c-mclip)">
+            <${Teeth} p="c" kind="before"/>
+            <g clipPath="url(#c-after)">
+              <${Teeth} p="c" kind="after"/>
+              <g clipPath="url(#c-tclip)"><rect className="shine" x="-200" y="40" width="90" height="220" fill="url(#c-shine)" transform="skewX(-16)"/></g>
+            </g>
+            <path d=${GUM_U} fill="url(#c-gum)"/>
+            <path d=${GUM_L} fill="url(#c-gumL)"/>
+          </g>
+          <${Lips} p="c"/>
+          <g ref=${handle} className="handle">
+            <line x1="0" y1="-10" x2="0" y2="310" stroke="#fff" strokeWidth="4"/>
+            <circle className="h-knob" cx="0" cy="150" r="26" fill="#0A1A26" stroke="#fff" strokeWidth="4"/>
+            <path d="M-8,141 L-15,150 L-8,159 M8,141 L15,150 L8,159" className="h-arrow" fill="none" stroke="#7FE0D6" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+          </g>
+        </svg>
+        <span className="smile-tag before">قبل</span>
+        <span className="smile-tag after">بعد التبييض</span>
+        <label><input ref=${range} type="range" min="0" max="100" defaultValue="50" aria-label="قارن قبل وبعد التبييض" onInput=${e => setPos(+e.target.value)}/></label>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ---------- inside the tooth + how decay happens ---------- */
+const TOOTH_D = 'M80,120 C70,80 90,55 115,62 C130,66 138,72 150,68 C162,72 170,66 185,62 C210,55 230,80 220,120 C216,150 214,190 212,230 C210,290 200,340 190,368 C186,378 174,376 172,366 C166,330 160,290 150,268 C140,290 134,330 128,366 C126,376 114,378 110,368 C100,340 90,290 88,230 C86,190 84,150 80,120 Z';
+const PULP_D = 'M120,150 C120,128 134,122 150,126 C166,122 180,128 180,150 C180,172 178,190 176,205 C180,250 184,300 186,352 L180,354 C176,300 170,250 166,214 C160,210 140,210 134,214 C130,250 124,300 120,354 L114,352 C116,300 120,250 124,205 C122,190 120,172 120,150 Z';
+const STORY = [
+  { k: 'enamel', t: 'المينا', d: 'الطبقة البيضا اللي بتشوفها. أقسى مادة بجسم الإنسان، بس ما بتتجدد إذا انكسرت أو ذابت.', L: [60, 70, 194, 108] },
+  { k: 'dentin', t: 'العاج', d: 'تحت المينا، أطرى منها ومليان قنوات صغيرة. لما يتعرّى بتحس بحساسية من البارد والسخن.', L: [60, 150, 212, 165] },
+  { k: 'pulp', t: 'اللب والعصب', d: 'قلب السن: أعصاب وأوعية دموية. إذا وصله التسوّس، هون بيبلّش الألم الحقيقي.', L: [60, 232, 258, 172] },
+  { k: 'gum', t: 'اللثة والعظم', d: 'بيحضنوا السن وبيثبتوه. نزيف اللثة وقت التفريش أول علامة إنها محتاجة اهتمام.', L: [60, 312, 152, 232] },
+  { k: 'plaque', t: 'البلاك', d: 'طبقة بكتيريا بتتكوّن كل يوم. لما تاكل سكر، البكتيريا بتحوّله لأسيد بيهاجم المينا.', L: [60, 40, 222, 58] },
+  { k: 'spot', t: 'بقعة بيضا', d: 'أول علامة إنه المينا بلّشت تخسر معادنها. بهالمرحلة الفلورايد ممكن يرجّعها.', L: [60, 100, 284, 76] },
+  { k: 'cavity', t: 'التسوّس', d: 'صار في ثقب بالمينا ووصل العاج. هون بدّها حشوة، وكل ما بكّرت كانت أصغر.', L: [60, 150, 288, 98] },
+  { k: 'pain', t: 'وصل العصب', d: 'التسوّس وصل اللب: ألم قوي والتهاب. الحل علاج عصب، أو خلع إذا تأخرت كثير.', L: [60, 222, 272, 150] }
+];
+const LABELS = ['المينا', 'العاج', 'اللب والعصب', 'اللثة والعظم', 'البلاك', 'بقعة بيضا', 'تسوّس', 'وصل العصب'];
+
+function ToothStory(){
+  const [active, setActive] = useState(0);
+  const svgRef = useRef(); const pulseTw = useRef();
+  useEffect(() => {
+    const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting) setActive(+e.target.dataset.i); }), { rootMargin: '-50% 0px -49% 0px' });
+    document.querySelectorAll('.story-step').forEach(s => io.observe(s));
+    if(FX && window.ScrollTrigger){
+      const q = s => svgRef.current.querySelectorAll(s);
+      gsap.timeline({ scrollTrigger: { trigger: svgRef.current, start: 'top 80%', once: true } })
+        .from(q('.L-gum'), { autoAlpha: 0, y: 40, duration: .8, ease: 'expo.out' })
+        .from(q('.layer-dentin'), { autoAlpha: 0, scale: .6, transformOrigin: '50% 40%', duration: 1, ease: 'elastic.out(1,.6)' }, .15)
+        .from(q('.L-enamel'), { autoAlpha: 0, y: -40, duration: .8, ease: 'back.out(2)' }, .45)
+        .from(q('.L-pulp'), { autoAlpha: 0, scaleY: 0, transformOrigin: '50% 0%', duration: .8, ease: 'expo.out' }, .6);
+    }
+    return () => io.disconnect();
+  }, []);
+  useEffect(() => {
+    const svg = svgRef.current; const q = sel => svg.querySelectorAll(sel);
+    const st = STORY[active]; const anat = active < 4; const stage = anat ? -1 : active - 4;
+    const layers = ['enamel', 'dentin', 'pulp', 'gum'];
+    const show = { '.D-plaque': stage >= 0, '.D-spot': stage === 1, '.D-cav': stage === 2, '.D-cav2': stage >= 3, '.D-pain': stage >= 3 };
+    layers.forEach(k => q('.L-' + k).forEach(el => el.classList.toggle('hl', anat && st.k === k)));
+    if(FX){
+      layers.forEach(k => gsap.to(q('.L-' + k), { opacity: (!anat || st.k === k) ? 1 : .14, duration: .5, overwrite: 'auto' }));
+      if(anat) gsap.fromTo(q('.L-' + st.k), { scale: 1.07 }, { scale: 1, transformOrigin: '50% 50%', duration: 1, ease: 'elastic.out(1,.4)' });
+      Object.entries(show).forEach(([sel, on]) => gsap.to(q(sel), on
+        ? { autoAlpha: 1, scale: 1, transformOrigin: '50% 50%', duration: .8, ease: 'back.out(2.4)', overwrite: 'auto' }
+        : { autoAlpha: 0, scale: .4, transformOrigin: '50% 50%', duration: .3, ease: 'power2.in', overwrite: 'auto' }));
+      pulseTw.current && pulseTw.current.kill();
+      if(stage >= 3){
+        pulseTw.current = gsap.fromTo(q('.pulse'), { scale: .6, opacity: .95 }, { scale: 2.4, opacity: 0, transformOrigin: '50% 50%', duration: 1.3, repeat: -1, stagger: .65, ease: 'power1.out' });
+        gsap.fromTo(q('.tooth'), { x: -6 }, { x: 0, duration: .6, ease: 'elastic.out(1.2,.15)' });
+      }
+      const lbl = q('.lbl')[0];
+      if(lbl){
+        gsap.fromTo(lbl.querySelector('text'), { autoAlpha: 0, x: -18 }, { autoAlpha: 1, x: 0, duration: .5, ease: 'expo.out' });
+        gsap.fromTo(lbl.querySelector('.lbl-line'), { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: .6, ease: 'power2.out', delay: .1 });
+        gsap.fromTo(lbl.querySelector('.lbl-dot'), { scale: 0, transformOrigin: '50% 50%' }, { scale: 1, duration: .6, delay: .45, ease: 'back.out(4)' });
+      }
+    } else {
+      layers.forEach(k => q('.L-' + k).forEach(el => { el.style.opacity = (!anat || st.k === k) ? 1 : .14; }));
+      Object.entries(show).forEach(([sel, on]) => q(sel).forEach(el => { el.style.opacity = on ? 1 : 0; }));
+    }
+  }, [active]);
+  const [lx, ly, px, py] = STORY[active].L;
+  return html`<section id="guide">
+    <div className="wrap">
+      <h2 data-split>شو في جوّا سنّك؟</h2>
+      <p className="lead" data-reveal>انزل شوي شوي: رح نفتح السن من النص زي صورة الأشعة، ونشوف كيف التسوّس بيوصل للعصب خطوة بخطوة.</p>
+      <div className="story">
+        <div className="story-visual">
+          <div className="xray">
+            <span className="xray-tag">مقطع عرضي</span>
+            <svg viewBox="0 0 420 400" ref=${svgRef} role="img" aria-label=${'رسم مقطع لسن: ' + STORY[active].t}>
+              <defs>
+                <clipPath id="crown"><rect x="-120" y="0" width="440" height="205"/></clipPath>
+                <linearGradient id="g-en" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#FFFFFF"/><stop offset="1" stopColor="#D6E3E0"/></linearGradient>
+                <radialGradient id="g-de" cx=".45" cy=".3" r=".8"><stop offset="0" stopColor="#F9E9C4"/><stop offset="1" stopColor="#D2AE6C"/></radialGradient>
+                <radialGradient id="g-pu" cx=".5" cy=".35" r=".7"><stop offset="0" stopColor="#FF9AA6"/><stop offset="1" stopColor="#C2374B"/></radialGradient>
+                <linearGradient id="g-gu" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#F3A1AB"/><stop offset="1" stopColor="#CB5F70"/></linearGradient>
+                <linearGradient id="g-bo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#E9DACB"/><stop offset="1" stopColor="#C9B194"/></linearGradient>
+              </defs>
+              <g className="tooth" transform="translate(110 0)">
+                <g className="L-gum">
+                  <rect x="-110" y="250" width="420" height="150" rx="22" fill="url(#g-bo)"/>
+                  <g fill="#BFA588" opacity=".55"><ellipse cx="-60" cy="300" rx="14" ry="8"/><ellipse cx="40" cy="342" rx="10" ry="6"/><ellipse cx="262" cy="310" rx="16" ry="9"/><ellipse cx="230" cy="372" rx="9" ry="6"/><ellipse cx="-20" cy="374" rx="12" ry="7"/><ellipse cx="-80" cy="350" rx="8" ry="5"/></g>
+                </g>
+                <g className="layer-dentin">
+                  <g className="L-dentin"><path d=${TOOTH_D} fill="url(#g-de)" stroke="#B08E52" strokeWidth="2"/></g>
+                  <g className="L-enamel" clipPath="url(#crown)"><path d=${TOOTH_D} fill="url(#g-en)" stroke="#8FA6A0" strokeWidth="2.5"/></g>
+                  <g className="L-dentin" clipPath="url(#crown)"><path d=${TOOTH_D} transform="translate(150 215) scale(.84) translate(-150 -215)" fill="url(#g-de)"/></g>
+                  <g className="L-pulp"><path d=${PULP_D} fill="url(#g-pu)"/><path d="M150,134 C148,170 138,200 128,240 M150,134 C152,170 162,200 172,240" stroke="#9E2A3C" strokeWidth="2" fill="none" opacity=".5"/></g>
+                  <path d="M96,96 C100,82 110,74 122,72" fill="none" stroke="#fff" strokeWidth="5" strokeLinecap="round" opacity=".8"/>
+                </g>
+                <g className="D-plaque" style=${{ opacity: 0 }}><path d="M80,114 C70,74 90,49 115,56 C130,60 138,66 150,62 C162,66 170,60 185,56 C210,49 230,74 220,114" fill="none" stroke="#E2C850" strokeWidth="8" strokeLinecap="round" strokeDasharray="1 10"/></g>
+                <g className="D-spot" style=${{ opacity: 0 }}><ellipse cx="176" cy="76" rx="15" ry="8" fill="#FFFFFF" stroke="#7F9690" strokeWidth="1.5" strokeDasharray="3 3"/></g>
+                <g className="D-cav" style=${{ opacity: 0 }}><path d="M168,64 C160,78 160,98 170,112 C180,118 192,108 192,94 C192,80 186,70 182,64 Z" fill="#B98A55"/><path d="M170,64 C165,76 166,92 173,102 C180,106 188,98 187,88 C186,78 182,70 180,64 Z" fill="#4E3320"/></g>
+                <g className="D-cav2" style=${{ opacity: 0 }}><path d="M164,62 C150,84 148,120 156,146 C166,160 186,148 192,124 C196,100 192,76 186,62 Z" fill="#B98A55"/><path d="M168,62 C158,84 158,116 163,138 C170,148 182,140 186,120 C190,98 186,76 182,62 Z" fill="#4E3320"/></g>
+                <g className="D-pain" style=${{ opacity: 0 }}><circle className="pulse" cx="160" cy="150" r="26" fill="none" stroke="#FF4D63" strokeWidth="3"/><circle className="pulse" cx="160" cy="150" r="26" fill="none" stroke="#FF4D63" strokeWidth="3"/></g>
+                <g className="L-gum">
+                  <path d="M-110,214 C0,206 60,198 86,210 C90,226 92,244 94,264 L-110,264 Z" fill="url(#g-gu)"/>
+                  <path d="M410,214 C300,206 240,198 214,210 C210,226 208,244 206,264 L410,264 Z" fill="url(#g-gu)"/>
+                </g>
+              </g>
+              <g className="lbl" key=${active}>
+                <path className="lbl-line" pathLength="1" d=${`M${lx + 58},${ly} L${px},${py}`}/>
+                <circle className="lbl-dot" cx=${px} cy=${py} r="6"/>
+                <text className="lbl-text" x=${lx} y=${ly + 7} textAnchor="middle">${LABELS[active]}</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div className="story-steps">
+          ${STORY.map((s, i) => html`<${React.Fragment} key=${s.k}>
+            ${i === 0 && html`<h3 className="story-group">تشريح السن</h3>`}
+            ${i === 4 && html`<h3 className="story-group">كيف بيصير التسوّس</h3>`}
+            <div className=${'story-step' + (i === active ? ' on' : '')} data-i=${i}>
+              <div className="story-card"><h3>${s.t}</h3><p>${s.d}</p></div>
+            </div>
+          </${React.Fragment}>`)}
+        </div>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ---------- brushing timer ---------- */
+const QUADS = [{ n: 'فوق يمين', x: 420, y: 150 }, { n: 'فوق يسار', x: 180, y: 150 }, { n: 'تحت يسار', x: 180, y: 222 }, { n: 'تحت يمين', x: 420, y: 222 }];
+const QRECT = [[300, 40, 262, 160], [38, 40, 262, 160], [38, 200, 262, 80], [300, 200, 262, 80]];
+const fmtTime = s => { s = Math.max(0, Math.ceil(s)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
+
+function Brushing(){
+  const [run, setRun] = useState(false);
+  const [el, setEl] = useState(0);
+  const base = useRef(0); const start = useRef(0);
+  const svgRef = useRef(); const scrub = useRef(); const bubbleTimer = useRef();
+  const done = el >= 120; const quad = Math.min(3, Math.floor(el / 30));
+  const elapsedNow = () => base.current + (run ? (performance.now() - start.current) / 1000 : 0);
+
+  useEffect(() => {
+    if(!run) return;
+    start.current = performance.now();
+    const id = setInterval(() => { const e = base.current + (performance.now() - start.current) / 1000; if(e >= 120){ setEl(120); setRun(false); } else setEl(e); }, 200);
+    return () => { clearInterval(id); base.current = Math.min(120, base.current + (performance.now() - start.current) / 1000); };
+  }, [run]);
+
+  useEffect(() => {
+    const svg = svgRef.current; const brush = svg.querySelector('.brush'); const inner = svg.querySelector('.brush-inner');
+    const target = QUADS[done ? 0 : quad];
+    if(FX) gsap.to(brush, { x: target.x, y: target.y, duration: .8, ease: 'power3.inOut' });
+    else brush.setAttribute('transform', `translate(${target.x} ${target.y})`);
+    scrub.current && scrub.current.kill(); clearInterval(bubbleTimer.current);
+    if(run && FX){
+      const o = { a: 0 };
+      scrub.current = gsap.to(o, { a: Math.PI * 2, duration: .4, repeat: -1, ease: 'none', onUpdate: () => gsap.set(inner, { x: 10 * Math.cos(o.a), y: 7 * Math.sin(o.a) }) });
+      const layer = svg.querySelector('.foam');
+      bubbleTimer.current = setInterval(() => {
+        const t = QUADS[Math.min(3, Math.floor(elapsedNow() / 30))];
+        const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        c.setAttribute('cx', t.x - 30 + (Math.random() - .5) * 150); c.setAttribute('cy', t.y - 40 + (Math.random() - .5) * 60);
+        c.setAttribute('r', 4 + Math.random() * 9); c.setAttribute('fill', 'rgba(255,255,255,.92)'); c.setAttribute('stroke', '#BFE3DC');
+        layer.appendChild(c);
+        gsap.fromTo(c, { scale: 0, transformOrigin: '50% 50%' }, { scale: 1, y: -20 - Math.random() * 24, opacity: 0, duration: 1.5, ease: 'power1.out', onComplete: () => c.remove() });
+      }, 120);
+    } else if(FX) gsap.to(inner, { x: 0, y: 0, duration: .3 });
+    return () => { scrub.current && scrub.current.kill(); clearInterval(bubbleTimer.current); };
+  }, [run, quad, done]);
+
+  useEffect(() => {
+    const svg = svgRef.current;
+    svg.querySelectorAll('.q').forEach((r, i) => {
+      const isDone = i < quad || done; const isOn = (run || el > 0) && i === quad && !done;
+      const o = isDone ? .2 : isOn ? .34 : 0;
+      if(FX) gsap.to(r, { opacity: o, fill: isDone ? '#7FE0D6' : '#2FC2B0', duration: .5 }); else r.style.opacity = o;
+    });
+    if(FX) svg.querySelectorAll('.qspark').forEach((s, i) => {
+      const on = i < quad || done;
+      if(on && s.dataset.on !== '1'){ s.dataset.on = '1'; gsap.fromTo(s, { scale: 0, rotate: -120, autoAlpha: 1, transformOrigin: '50% 50%' }, { scale: 1, rotate: 0, duration: .9, ease: 'elastic.out(1,.4)' }); }
+      if(!on && s.dataset.on === '1'){ s.dataset.on = '0'; gsap.to(s, { autoAlpha: 0, duration: .2 }); }
+    });
+  }, [quad, done, run, el > 0]);
+
+  const click = () => { if(done){ base.current = 0; setEl(0); setRun(false); return; } setRun(!run); };
+  const label = done ? 'من جديد' : run ? 'وقّف' : el > 0 ? 'كمّل' : 'ابدأ دقيقتين';
+  const C = 2 * Math.PI * 40;
+  return html`<section id="brush" className="brush-sec">
+    <div className="wrap">
+      <h2 data-split>فرّش صح، دقيقتين كاملات</h2>
+      <p className="lead" data-reveal>معظمنا بيفرّش أقل من دقيقة. جرّب المؤقت: 30 ثانية لكل جهة، والفرشاة بتوريك وين.</p>
+      <div className="brush-grid">
+        <div>
+          <div className="brush-panel">
+            <svg viewBox="0 0 600 300" ref=${svgRef} role="img" aria-label=${done ? 'خلص التفريش' : 'الجهة الحالية: ' + QUADS[quad].n}>
+              <${SmileDefs} p="b"/>
+              <path d=${MOUTH} fill="url(#b-mouth)"/>
+              <g clipPath="url(#b-mclip)">
+                <${Teeth} p="b" kind="after"/>
+                <path d=${GUM_U} fill="url(#b-gum)"/>
+                <path d=${GUM_L} fill="url(#b-gumL)"/>
+                ${QRECT.map((r, i) => html`<rect key=${'q' + i} className="q" x=${r[0]} y=${r[1]} width=${r[2]} height=${r[3]} fill="#2FC2B0" style=${{ opacity: 0, mixBlendMode: 'screen' }}/>`)}
+                <line x1="300" y1="40" x2="300" y2="280" stroke="#fff" strokeOpacity=".25" strokeWidth="2" strokeDasharray="4 6"/>
+              </g>
+              <${Lips} p="b"/>
+              ${QUADS.map((qd, i) => html`<g key=${'s' + i} className="qspark" style=${{ opacity: 0 }} transform=${`translate(${i % 3 === 0 ? 520 : 80} ${i < 2 ? 60 : 250})`}><path d="M0,-16 C1,-6 6,-1 16,0 C6,1 1,6 0,16 C-1,6 -6,1 -16,0 C-6,-1 -1,-6 0,-16 Z" fill="#FFD43B" stroke="#C99A00" strokeWidth="1"/></g>`)}
+              <g className="foam"></g>
+              <g className="brush" transform="translate(420 150)">
+                <g className="brush-inner">
+                  <g transform="rotate(-32)">
+                    <rect className="brush-handle" x="34" y="-9" width="210" height="18" rx="9" fill="#E8707A"/>
+                    <rect x="34" y="-9" width="210" height="7" rx="3.5" fill="#fff" opacity=".35"/>
+                    <rect x="-40" y="-14" width="80" height="28" rx="11" fill="#FFFFFF" stroke="#0A1A26" strokeWidth="2.5"/>
+                    <rect x="-36" y="-36" width="72" height="22" rx="4" fill="#7FE0D6" stroke="#0A1A26" strokeWidth="2"/>
+                    <path d="M-28,-36 V-16 M-18,-36 V-16 M-8,-36 V-16 M2,-36 V-16 M12,-36 V-16 M22,-36 V-16 M30,-36 V-16" stroke="#0A1A26" strokeOpacity=".25" strokeWidth="1.5"/>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div className="timer">
+            <div className="ring">
+              <svg viewBox="0 0 96 96"><circle className="bg" cx="48" cy="48" r="40"/><circle className="fg" cx="48" cy="48" r="40" strokeDasharray=${C} strokeDashoffset=${C * (1 - el / 120)}/></svg>
+              <span>${fmtTime(120 - el)}</span>
+            </div>
+            <div className="timer-info" aria-live="polite">
+              <strong>${done ? 'خلصت! أسنانك نظيفة' : el > 0 || run ? 'هسا: ' + QUADS[quad].n : 'جاهز؟'}</strong>
+              <span>${done ? 'هيك لازم كل مرة، الصبح وقبل النوم.' : '30 ثانية لكل جهة من الأربع جهات'}</span>
+            </div>
+            <button className="btn primary" onClick=${click}>${label}</button>
+          </div>
+        </div>
+        <ol className="tips">
+          <li><div><b>كمية بحجم حبة البازيلا</b><span>من معجون فيه فلورايد، مش أكثر.</span></div></li>
+          <li><div><b>ميّل الفرشاة 45 درجة</b><span>باتجاه اللثة، وحرّكها بدوائر صغيرة وبلطف، مش فرك قوي.</span></div></li>
+          <li><div><b>ثلاث وجوه لكل سن</b><span>الخارجي والداخلي وسطح المضغ، وما تنسى لسانك.</span></div></li>
+          <li><div><b>ابزق وما تشطف</b><span>خلّي الفلورايد يضل على أسنانك وما تغسله بالمي.</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ---------- sugar & acidity ---------- */
+const T0 = 7 * 60, T1 = 23 * 60, STEP_MIN = 4;
+const EVENTS = { meals: [8 * 60, 14 * 60, 20 * 60], snacks: [8 * 60, 10 * 60, 11 * 60 + 30, 14 * 60, 16 * 60, 17 * 60 + 30, 20 * 60, 22 * 60] };
+const phAt = (t, ev) => { let d = 0; ev.forEach(e => { const x = t - e; if(x < 0) return; d = Math.max(d, x < 6 ? x / 6 : Math.exp(-(x - 6) / 30)); }); return 7 - 2.2 * d; };
+const SAMPLES = []; for(let t = T0; t <= T1; t += STEP_MIN) SAMPLES.push(t);
+const PH = { meals: SAMPLES.map(t => phAt(t, EVENTS.meals)), snacks: SAMPLES.map(t => phAt(t, EVENTS.snacks)) };
+const DANGER = { meals: 0, snacks: 0 };
+['meals', 'snacks'].forEach(m => { let c = 0; for(let t = T0; t <= T1; t++) if(phAt(t, EVENTS[m]) < 5.5) c++; DANGER[m] = c; });
+const cxT = t => 50 + (t - T0) / (T1 - T0) * 570;
+const cyP = ph => 24 + (7.3 - ph) / (7.3 - 4.5) * 206;
+const pathFrom = arr => arr.map((v, i) => (i ? 'L' : 'M') + cxT(SAMPLES[i]).toFixed(1) + ',' + cyP(v).toFixed(1)).join(' ');
+
+function Sugar(){
+  const [mode, setMode] = useState('meals');
+  const ref = useRef(); const st = useRef({ k: 0 }); const numRef = useRef(); const segRef = useRef();
+  const draw = () => {
+    const k = st.current.k; const arr = PH.meals.map((v, i) => v * (1 - k) + PH.snacks[i] * k);
+    const d = pathFrom(arr);
+    ref.current.querySelectorAll('.curve').forEach(p => p.setAttribute('d', d));
+    ref.current.querySelector('.area').setAttribute('d', d + ` L620,230 L50,230 Z`);
+  };
+  const movePill = (anim) => {
+    const seg = segRef.current; const b = seg.querySelectorAll('button')[mode === 'meals' ? 0 : 1]; const pill = seg.querySelector('.seg-pill');
+    const v = { x: b.offsetLeft - 4, width: b.offsetWidth };
+    if(FX && anim) gsap.to(pill, { ...v, duration: .6, ease: 'elastic.out(1,.7)' }); else { pill.style.width = v.width + 'px'; pill.style.transform = `translateX(${v.x}px)`; }
+  };
+  useEffect(() => {
+    draw(); movePill(false); fontsReady.then(() => movePill(false));
+    if(FX && window.ScrollTrigger){
+      const curves = ref.current.querySelectorAll('.curve');
+      const tl = gsap.timeline({ scrollTrigger: { trigger: ref.current, start: 'top 75%', once: true } });
+      tl.fromTo(curves, { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 2.2, ease: 'power2.inOut', onComplete: () => curves.forEach(c => { c.style.strokeDasharray = 'none'; }) })
+        .from(ref.current.querySelector('.area'), { autoAlpha: 0, duration: 1 }, 1.4)
+        .from(ref.current.querySelectorAll('.ev'), { scale: 0, transformOrigin: '50% 50%', duration: .6, stagger: .12, ease: 'back.out(3)' }, .3);
+      const o = { n: 0 }; tl.to(o, { n: DANGER.meals, duration: 2, ease: 'power2.out', onUpdate: () => { numRef.current.textContent = Math.round(o.n); } }, 0);
+    }
+  }, []);
+  useEffect(() => { movePill(true); }, [mode]);
+  const pick = m => {
+    if(m === mode) return; setMode(m);
+    const k = m === 'snacks' ? 1 : 0; const o = { n: +numRef.current.textContent || 0 };
+    if(FX){
+      gsap.to(st.current, { k, duration: 1.2, ease: 'power3.inOut', onUpdate: draw });
+      gsap.to(o, { n: DANGER[m], duration: 1.2, ease: 'power3.inOut', onUpdate: () => { numRef.current.textContent = Math.round(o.n); } });
+      gsap.fromTo(numRef.current, { scale: 1.6 }, { scale: 1, duration: .9, ease: 'elastic.out(1,.45)' });
+      setTimeout(() => gsap.fromTo(ref.current.querySelectorAll('.ev'), { scale: 0, transformOrigin: '50% 50%' }, { scale: 1, duration: .6, stagger: .06, ease: 'back.out(3)' }), 0);
+    } else { st.current.k = k; draw(); numRef.current.textContent = DANGER[m]; }
+  };
+  return html`<section id="sugar">
+    <div className="wrap">
+      <h2 data-split>مش كمية السكر، عدد المرّات</h2>
+      <p className="lead" data-reveal>كل مرة بتاكل أو بتشرب إشي فيه سكر، فمك بيصير حامضي وبياخذ تقريباً ساعة ليرجع طبيعي. تحت خط الخطر، المينا بتخسر من معادنها.</p>
+      <div className="sugar-card" data-reveal>
+        <div className="sugar-top">
+          <div className="seg" ref=${segRef} role="group" aria-label="نوع اليوم">
+            <span className="seg-pill" aria-hidden="true"></span>
+            <button aria-pressed=${mode === 'meals'} onClick=${() => pick('meals')}>3 وجبات</button>
+            <button aria-pressed=${mode === 'snacks'} onClick=${() => pick('snacks')}>سناكات طول اليوم</button>
+          </div>
+          <div className="danger"><b ref=${numRef}>${DANGER.meals}</b>دقيقة تحت خط الخطر</div>
+        </div>
+        <svg className="chart" viewBox="0 0 640 285" ref=${ref} role="img" aria-label="رسم لدرجة حموضة الفم خلال اليوم">
+          <defs>
+            <clipPath id="below"><rect x="0" y=${cyP(5.5)} width="640" height="300"/></clipPath>
+            <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#0E8F8A" stopOpacity=".35"/><stop offset="1" stopColor="#0E8F8A" stopOpacity="0"/></linearGradient>
+          </defs>
+          <rect className="zone" x="50" y=${cyP(5.5)} width="570" height=${230 - cyP(5.5)} rx="8"/>
+          <path className="area"/>
+          <line className="crit" x1="50" x2="620" y1=${cyP(5.5)} y2=${cyP(5.5)}/>
+          <line className="axis" x1="50" x2="620" y1="230" y2="230"/>
+          <text x="44" y=${cyP(7) + 4} textAnchor="end">7</text>
+          <text x="44" y=${cyP(5.5) + 4} textAnchor="end">5.5</text>
+          <text x="614" y=${cyP(5.5) + 20} textAnchor="end" style=${{ fill: 'var(--coral)', fontWeight: 600 }}>خط الخطر</text>
+          ${[[8, '8 ص'], [12, '12 ظ'], [16, '4 م'], [20, '8 م']].map(([h, t]) => html`<text key=${h} x=${cxT(h * 60)} y="252" textAnchor="middle">${t}</text>`)}
+          <path className="curve" pathLength="1"/>
+          <path className="curve hot" pathLength="1" clipPath="url(#below)"/>
+          ${EVENTS[mode].map(e => html`<circle key=${mode + e} className="ev" cx=${cxT(e)} cy="272" r="7"/>`)}
+        </svg>
+        <p className="note-small">النقاط تحت = مرّات أكل السكر. رسم توضيحي مبسّط لدرجة حموضة الفم (pH).</p>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ---------- habits ---------- */
+const HABITS = [
+  { n: 2, u: 'مرّات', t: 'تفريش باليوم، الصبح وقبل النوم.' },
+  { n: 2, u: 'دقيقة', t: 'لكل مرة تفريش، ولا ثانية أقل.' },
+  { n: 1, u: 'مرة', t: 'خيط أسنان باليوم، للأماكن اللي الفرشاة ما بتوصلها.' },
+  { n: 3, u: 'شهور', t: 'وبتغيّر الفرشاة، أو أبكر إذا شعرها فتح.' },
+  { n: 6, u: 'شهور', t: 'بين كل فحص وتنظيف بالعيادة، أو حسب ما يحكيلك طبيبك.' }
+];
+function Habits(){
+  const ref = useRef();
+  useEffect(() => {
+    if(!FX || !window.ScrollTrigger) return;
+    const items = ref.current.querySelectorAll('.habit');
+    const tl = gsap.timeline({ scrollTrigger: { trigger: ref.current, start: 'top 80%', once: true } });
+    items.forEach((it, i) => {
+      const n = it.querySelector('.n'); const o = { v: 0 }; n.textContent = '0';
+      tl.fromTo(it, { '--s': 0 }, { '--s': 1, duration: .9, ease: 'expo.out' }, i * .12)
+        .from(n, { yPercent: 70, scale: .3, duration: 1.2, ease: 'elastic.out(1,.5)' }, i * .12)
+        .to(o, { v: HABITS[i].n, duration: 1.2, ease: 'power3.out', onUpdate: () => { n.textContent = Math.round(o.v); } }, i * .12)
+        .from(it.querySelectorAll('.u, p'), { y: 16, autoAlpha: 0, duration: .7, ease: 'expo.out' }, i * .12 + .2);
+    });
+  }, []);
+  return html`<section>
+    <div className="wrap">
+      <h2 data-split>خمس عادات بتفرق</h2>
+      <div className="habits" ref=${ref}>
+        ${HABITS.map((h, i) => html`<div className="habit" key=${i}><span className="n">${h.n}</span><span className="u">${h.u}</span><p>${h.t}</p></div>`)}
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ---------- clinic sections ---------- */
+function Services(){
+  return html`<section id="services" style=${{ paddingTop: 0 }}>
+    <div className="wrap">
+      <h2 data-split>شو بنعالج</h2>
+      <p className="lead" data-reveal>من الفحص الدوري لحد زراعة سن كامل، كل إشي بمكان واحد.</p>
+      <div className="svc">
+        ${SERVICES.map(s => html`<div className="svc-item" key=${s.k}>
+          <div className="svc-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d=${TOOTH}/>${ICON_EXTRA[s.k]}</svg></div>
+          <div><h3>${s.t}</h3><p>${s.d}</p></div>
+        </div>`)}
+      </div>
+    </div>
+  </section>`;
+}
+
+function Visit(){
+  return html`<section id="visit" className="process">
+    <div className="wrap">
+      <h2 data-split>كيف بتمشي زيارتك</h2>
+      <p className="lead" data-reveal>بدون مفاجآت: بتعرف كل خطوة قبل ما تصير.</p>
+      <div className="steps">
+        <div className="track" aria-hidden="true"><div className="track-fill"></div></div>
+        ${STEPS.map((s, i) => html`<div className="step" key=${i}><span className="step-num">${i + 1}</span><h3>${s.t}</h3><p>${s.d}</p></div>`)}
+      </div>
+    </div>
+  </section>`;
+}
+
+function Doctor(){
+  const ref = useRef();
+  useEffect(() => {
+    if(!FX || !window.ScrollTrigger) return;
+    const q = s => ref.current.querySelectorAll(s);
+    gsap.timeline({ scrollTrigger: { trigger: ref.current, start: 'top 75%', once: true } })
+      .from(q('.face'), { scale: 0, rotate: -40, duration: 1.2, ease: 'elastic.out(1,.55)' })
+      .fromTo(q('.ring-draw'), { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.4, ease: 'power3.inOut' }, .1)
+      .from(q('.orbit'), { autoAlpha: 0, duration: .6 }, .8)
+      .from(q('.doc-copy > *'), { x: -40, autoAlpha: 0, duration: .9, stagger: .1, ease: 'expo.out' }, .3);
+  }, []);
+  const initials = CLINIC.doctor.replace('د.', '').trim().split(' ').map(w => w[0]).slice(0, 2).join(' ');
+  return html`<section id="doctor">
+    <div className="wrap">
+      <h2 data-split>طبيبك</h2>
+      <div className="doctor" ref=${ref}>
+        <div className="avatar" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#E8707A"/><stop offset="1" stopColor="#0E8F8A"/></linearGradient></defs>
+            <circle className="ring-draw" cx="100" cy="100" r="92" fill="none" stroke="url(#rg)" strokeWidth="5" strokeLinecap="round" pathLength="1" transform="rotate(-90 100 100)"/>
+            <g className="orbit"><circle cx="100" cy="100" r="80" fill="none" stroke="#7FE0D6" strokeOpacity=".5" strokeWidth="1.5" strokeDasharray="2 8"/><circle cx="180" cy="100" r="7" fill="#E8707A"/></g>
+          </svg>
+          <div className="face">${initials}</div>
+        </div>
+        <div className="doc-copy">
+          <h3>${CLINIC.doctor}</h3>
+          <p className="role">${CLINIC.role}</p>
+          <p className="bio">بيستقبلك بنفسه من أول فحص لآخر جلسة، وبيشرحلك كل خيار علاج وسعره قبل ما تقرر. هدفه إنك تطلع من العيادة مرتاح، مش بس أسنانك.</p>
+          <button className="btn primary magnetic" onClick=${() => go('book')}>احجز مع ${CLINIC.doctor}</button>
+        </div>
+      </div>
+    </div>
+  </section>`;
+}
+
+function Reviews(){
+  return html`<section className="reviews">
+    <div className="wrap">
+      <h2 data-split>شو بحكوا مرضانا</h2>
+      <div className="quotes">
+        ${CLINIC.reviews.map((r, i) => html`<figure className="quote" key=${i}>
+          <svg viewBox="0 0 40 40" fill="currentColor" aria-hidden="true"><path d="M17 10c-6 2-10 7-10 14v6h10V20h-5c0-4 2-6 5-7zM33 10c-6 2-10 7-10 14v6h10V20h-5c0-4 2-6 5-7z"/></svg>
+          <blockquote>${r.text}</blockquote>
+          <figcaption><span className="stars" aria-label="5 نجوم">★★★★★</span> ${r.who}</figcaption>
+        </figure>`)}
+      </div>
+    </div>
+  </section>`;
+}
+
+function Faq(){
+  const [open, setOpen] = useState(0);
+  return html`<section id="faq">
+    <div className="wrap">
+      <h2 data-split>أسئلة بتنسأل كثير</h2>
+      <div className="faq-list">
+        ${FAQ.map((f, i) => html`<div className=${'faq-item' + (open === i ? ' open' : '')} key=${i}>
+          <button className="faq-q" aria-expanded=${open === i} onClick=${() => setOpen(open === i ? -1 : i)}>
+            <span>${f.q}</span>
+            <span className="faq-plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 2v12M2 8h12" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/></svg></span>
+          </button>
+          <div className="faq-a"><div><p>${f.a}</p></div></div>
+        </div>`)}
+      </div>
+    </div>
+  </section>`;
+}
+
+function Book(){
+  const [f, setF] = useState({ name: '', service: '', date: '', period: 'مسائي', notes: '' });
+  const [err, setErr] = useState(''); const [sent, setSent] = useState(null);
+  const markRef = useRef();
+  const set = k => e => setF({ ...f, [k]: e.target.value });
+  useEffect(() => {
+    if(sent && FX && markRef.current){
+      markRef.current.querySelectorAll('circle, path').forEach((el, i) => { const l = el.getTotalLength(); gsap.fromTo(el, { strokeDasharray: l, strokeDashoffset: l }, { strokeDashoffset: 0, duration: .6, delay: i * .3, ease: 'power2.out' }); });
+      gsap.from(markRef.current.parentNode.querySelectorAll('h3, pre, .note, .btn'), { y: 20, autoAlpha: 0, stagger: .08, duration: .6, ease: 'expo.out', delay: .3 });
+    }
+  }, [sent]);
+  function submit(){
+    setErr('');
+    if(!f.name.trim()) return setErr('اكتب اسمك عشان العيادة تعرف الموعد لمين.');
+    if(!f.service) return setErr('اختار الخدمة اللي بدك ياها.');
+    if(!f.date) return setErr('اختار اليوم اللي بناسبك.');
+    const day = new Date(f.date + 'T12:00').toLocaleDateString('ar-JO', { weekday: 'long', day: 'numeric', month: 'long' });
+    const msg = `مرحبا، بدي أحجز موعد في ${CLINIC.name}\nالاسم: ${f.name.trim()}\nالخدمة: ${f.service}\nاليوم: ${day}\nالفترة: ${f.period}` + (f.notes.trim() ? `\nملاحظات: ${f.notes.trim()}` : '');
+    if(CLINIC.whatsapp) window.open('https://wa.me/' + CLINIC.whatsapp + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    setSent(msg);
+  }
+  return html`<section id="book" className="book on-night">
+    <div className="wrap book-grid">
+      <div id="contact" className="info">
+        <div>
+          <h2 data-split>احجز موعدك</h2>
+          <p className="lead" data-reveal>عبّي التفاصيل وبتوصل رسالتك للعيادة على واتساب، والعيادة بترد عليك تأكّد الموعد.</p>
+        </div>
+        <div data-reveal>
+          <h3>ساعات الدوام</h3>
+          <ul className="hours">${CLINIC.hours.map(([d, h]) => html`<li key=${d}><span>${d}</span><span>${h}</span></li>`)}</ul>
+        </div>
+        <div data-reveal>
+          <h3>العنوان</h3>
+          <p>${CLINIC.address}</p>
+          <div className="info-actions">
+            <a className="btn" href=${mapsHref} target="_blank" rel="noopener">افتح الموقع على الخريطة</a>
+            <a className="btn" href=${callHref}><${PhoneIcon}/><span dir="ltr">${CLINIC.phoneDisplay}</span></a>
+          </div>
+        </div>
+      </div>
+      <div className="card">
+        ${sent ? html`<div className="sent">
+            <svg viewBox="0 0 80 80" ref=${markRef} aria-hidden="true"><circle cx="40" cy="40" r="36"/><path d="M25 41l10 10 20-22"/></svg>
+            <h3>${CLINIC.whatsapp ? 'فتحنا واتساب برسالة الحجز' : 'هاي رسالة الحجز'}</h3>
+            <pre>${sent}</pre>
+            ${!CLINIC.whatsapp && html`<p className="note">رقم واتساب العيادة مش مضاف لسا، فهاي معاينة للرسالة اللي رح توصل.</p>`}
+            <button className="btn" onClick=${() => setSent(null)}>احجز موعد ثاني</button>
+          </div>` : html`<div className="form">
+            <div className="field full"><label htmlFor="b-name">الاسم</label><input id="b-name" autoComplete="name" value=${f.name} onInput=${set('name')}/></div>
+            <div className="field full"><label htmlFor="b-svc">الخدمة</label>
+              <select id="b-svc" value=${f.service} onChange=${set('service')}>
+                <option value="">اختار الخدمة</option>
+                ${SERVICES.map(s => html`<option key=${s.k} value=${s.t}>${s.t}</option>`)}
+                <option value="مش متأكد، بدي استشارة">مش متأكد، بدي استشارة</option>
+              </select>
+            </div>
+            <div className="field"><label htmlFor="b-date">اليوم</label><input id="b-date" type="date" min=${todayISO()} value=${f.date} onInput=${set('date')}/></div>
+            <div className="field"><span className="lbl" id="b-period">الفترة</span>
+              <div className="pills" role="group" aria-labelledby="b-period">
+                ${['صباحي', 'مسائي'].map(p => html`<button key=${p} type="button" className="pill" aria-pressed=${f.period === p} onClick=${() => setF({ ...f, period: p })}>${p}</button>`)}
+              </div>
+            </div>
+            <div className="field full"><label htmlFor="b-notes">ملاحظات (اختياري)</label><textarea id="b-notes" placeholder="مثلاً: عندي ألم بسن من يومين" value=${f.notes} onInput=${set('notes')}></textarea></div>
+            ${err && html`<p className="form-error" role="alert">${err}</p>`}
+            <button className="btn primary magnetic" onClick=${submit}><${WaIcon}/>احجز عبر واتساب</button>
+          </div>`}
+      </div>
+    </div>
+  </section>`;
+}
+
+function WaFloat(){
+  const ref = useRef();
+  useEffect(() => {
+    const f = () => ref.current && ref.current.classList.toggle('show', window.scrollY > window.innerHeight * .8);
+    f(); window.addEventListener('scroll', f, { passive: true });
+    return () => window.removeEventListener('scroll', f);
+  }, []);
+  const href = CLINIC.whatsapp ? 'https://wa.me/' + CLINIC.whatsapp : '#book';
+  return html`<a className="wa" ref=${ref} href=${href} target=${CLINIC.whatsapp ? '_blank' : undefined} rel="noopener" aria-label="احجز عبر واتساب"
+    onClick=${e => { if(!CLINIC.whatsapp){ e.preventDefault(); go('book'); } }}><${WaIcon}/></a>`;
+}
+
+/* ---------- app + scroll choreography ---------- */
+function App(){
+  const [menu, setMenu] = useState(false);
+  useEffect(() => {
+    const io = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('offscreen', !e.isIntersecting)), { rootMargin: '120px 0px' });
+    document.querySelectorAll('main > section').forEach(sec => io.observe(sec));
+    return () => io.disconnect();
+  }, []);
+  useClickSpark();
+  useEffect(() => {
+    if(!finePointer) return;
+    const f = e => { const it = e.target.closest && e.target.closest('.svc-item'); if(!it) return; const r = it.getBoundingClientRect(); it.style.setProperty('--mx', (e.clientX - r.left) + 'px'); it.style.setProperty('--my', (e.clientY - r.top) + 'px'); };
+    window.addEventListener('pointermove', f, { passive: true }); return () => window.removeEventListener('pointermove', f);
+  }, []);
+  useEffect(() => {
+    if(reduceMotion || !window.Lenis || isMobile) return;
+    const lenis = new Lenis({ duration: 1.15, smoothWheel: true });
+    window.__lenis = lenis;
+    let tick;
+    if(hasGsap){ if(window.ScrollTrigger) lenis.on('scroll', ScrollTrigger.update); tick = t => lenis.raf(t * 1000); gsap.ticker.add(tick); gsap.ticker.lagSmoothing(0); }
+    else { const raf = t => { lenis.raf(t); tick = requestAnimationFrame(raf); }; tick = requestAnimationFrame(raf); }
+    return () => { hasGsap ? gsap.ticker.remove(tick) : cancelAnimationFrame(tick); lenis.destroy(); window.__lenis = null; };
+  }, []);
+  useEffect(() => {
+    const l = window.__lenis; if(l){ menu ? l.stop() : l.start(); }
+    document.documentElement.style.overflow = menu ? 'hidden' : '';
+  }, [menu]);
+
+  useEffect(() => {
+    if(!FX || !window.ScrollTrigger) return;
+    let ctx, alive = true;
+    fontsReady.then(() => {
+      if(!alive) return;
+      ctx = gsap.context(() => {
+        document.querySelectorAll('[data-split]').forEach(el => {
+          const words = window.SplitText ? new SplitText(el, { type: 'words', mask: 'words' }).words : [el];
+          gsap.from(words, { yPercent: 125, rotate: 7, transformOrigin: 'right bottom', duration: 1.1, stagger: .07, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%' } });
+        });
+        document.querySelectorAll('[data-reveal]').forEach(el => gsap.from(el, { y: 40, autoAlpha: 0, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 90%' } }));
+        ScrollTrigger.batch('.svc-item', { start: 'top 90%', once: true, onEnter: b => {
+          gsap.from(b, { x: -60, autoAlpha: 0, duration: .9, stagger: .08, ease: 'expo.out' });
+          gsap.from(b.map(x => x.querySelector('.svc-icon')), { scale: 0, rotate: -40, duration: .9, stagger: .08, ease: 'back.out(2.4)' });
+          b.forEach((x, i) => gsap.fromTo(x.querySelectorAll('.svc-icon path, .svc-icon circle'), { strokeDasharray: 1, strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.2, delay: .2 + i * .08, ease: 'power2.inOut' }));
+        } });
+        gsap.to('.track-fill', { scaleY: 1, ease: 'none', scrollTrigger: { trigger: '.steps', start: 'top 70%', end: 'bottom 60%', scrub: isMobile ? true : .5 } });
+        gsap.utils.toArray('.step').forEach(st => {
+          ScrollTrigger.create({ trigger: st, start: 'top 65%', onEnter: () => { st.classList.add('on'); gsap.fromTo(st.querySelector('.step-num'), { scale: .5 }, { scale: 1, duration: .8, ease: 'elastic.out(1,.4)' }); }, onLeaveBack: () => st.classList.remove('on') });
+          gsap.from(st.querySelectorAll('h3, p'), { x: -50, autoAlpha: 0, duration: .9, stagger: .08, ease: 'expo.out', scrollTrigger: { trigger: st, start: 'top 85%' } });
+        });
+        gsap.from('.quote', { y: 70, autoAlpha: 0, duration: 1, stagger: .14, ease: 'expo.out', scrollTrigger: { trigger: '.quotes', start: 'top 85%' } });
+        gsap.from('.quote > svg', { scale: 0, rotate: -60, duration: 1, stagger: .14, ease: 'back.out(2.5)', scrollTrigger: { trigger: '.quotes', start: 'top 85%' } });
+        gsap.from('.faq-item', { y: 30, autoAlpha: 0, duration: .7, stagger: .06, ease: 'expo.out', scrollTrigger: { trigger: '.faq-list', start: 'top 88%' } });
+        gsap.from('.card', { y: 70, rotate: -1.5, autoAlpha: 0, duration: 1.1, ease: 'expo.out', scrollTrigger: { trigger: '.card', start: 'top 88%' } });
+        gsap.from('.form .field, .form .btn', { y: 26, autoAlpha: 0, duration: .7, stagger: .06, ease: 'expo.out', scrollTrigger: { trigger: '.card', start: 'top 80%' } });
+        gsap.to('.progress', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: .3 } });
+        gsap.to('.bg-mesh-rot', { rotation: 40, scale: 1.2, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: 1.2 } });
+        ScrollTrigger.refresh();
+      });
+    });
+    return () => { alive = false; ctx && ctx.revert(); };
+  }, []);
+
+  useEffect(() => {
+    if(!FX || !finePointer) return;
+    const offs = [];
+    document.querySelectorAll('.magnetic').forEach(el => {
+      const xTo = gsap.quickTo(el, 'x', { duration: .6, ease: 'elastic.out(1,.4)' }), yTo = gsap.quickTo(el, 'y', { duration: .6, ease: 'elastic.out(1,.4)' });
+      const mm = e => { const r = el.getBoundingClientRect(); xTo((e.clientX - (r.left + r.width / 2)) * .3); yTo((e.clientY - (r.top + r.height / 2)) * .4); };
+      const ml = () => { xTo(0); yTo(0); };
+      el.addEventListener('mousemove', mm); el.addEventListener('mouseleave', ml);
+      offs.push(() => { el.removeEventListener('mousemove', mm); el.removeEventListener('mouseleave', ml); });
+    });
+    return () => offs.forEach(f => f());
+  }, []);
+
+  return html`<div>
+    <div className="bg-mesh-wrap" aria-hidden="true" style=${{ position: 'fixed', inset: 0, zIndex: -1, pointerEvents: 'none', overflow: 'hidden' }}><div className="bg-mesh-rot" style=${{ position: 'absolute', inset: 0 }}><div className="bg-mesh"></div></div><${BgParticles}/></div>
+    <${Header} onMenu=${() => setMenu(true)}/>
+    <main>
+      <${Hero}/>
+      <${Simulator}/>
+      <${Compare}/>
+      <${ToothStory}/>
+      <${Brushing}/>
+      <${Habits}/>
+      <${Visit}/>
+      <${Services}/>
+      <${Doctor}/>
+      <${Faq}/>
+      <${Book}/>
+    </main>
+    <footer className="foot"><div className="wrap"><span>${CLINIC.name} ${CLINIC.tagline}، ${CLINIC.city}</span><span>© 2026</span></div></footer>
+    <${WaFloat}/>
+    <${Menu} open=${menu} onClose=${() => setMenu(false)}/>
+  </div>`;
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(html`<${App}/>`);
+
+</script>
+</body>
+</html>
